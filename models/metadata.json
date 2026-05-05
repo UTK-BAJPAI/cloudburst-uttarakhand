@@ -1,0 +1,33 @@
+{
+  "feature_cols": [
+    "PRECTOT",
+    "T2M",
+    "RH2M",
+    "WS2M",
+    "Rainfall_Intensity",
+    "Humidity_Rainfall",
+    "Temperature_Change",
+    "Heat_Index",
+    "Month_sin",
+    "Month_cos"
+  ],
+  "tuned_threshold": 0.8961397283594066,
+  "sklearn": true,
+  "metrics": {
+    "roc_auc": 1.0,
+    "accuracy_default": 1.0,
+    "accuracy_tuned": 1.0
+  },
+  "feature_importance": {
+    "PRECTOT": 0.2743350666289385,
+    "T2M": 0.004678306114105798,
+    "RH2M": 0.11676046106797841,
+    "WS2M": 0.031290378213764104,
+    "Rainfall_Intensity": 0.28338806971263036,
+    "Humidity_Rainfall": 0.26219031492044514,
+    "Temperature_Change": 0.0014468441048935638,
+    "Heat_Index": 0.015951802472159535,
+    "Month_sin": 0.004727740666697852,
+    "Month_cos": 0.00523101609838677
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Cloudburst Dark - Uttarakhand",
+  "background": "#0B1424",
+  "foreground": "#E6EEFB",
+  "tableAccent": "#06B6D4",
+  "dataColors": [
+    "#2563EB",
+    "#06B6D4",
+    "#10B981",
+    "#F59E0B",
+    "#EF4444",
+    "#A855F7",
+    "#F97316",
+    "#22D3EE",
+    "#84CC16",
+    "#EAB308"
+  ],
+  "good":     "#10B981",
+  "neutral":  "#F59E0B",
+  "bad":      "#EF4444",
+  "maximum":  "#EF4444",
+  "center":   "#F59E0B",
+  "minimum":  "#10B981",
+  "null":     "#374151",
+  "textClasses": {
+    "title":      { "fontSize": 22, "fontFace": "Segoe UI Bold",  "color": "#E6EEFB" },
+    "header":     { "fontSize": 14, "fontFace": "Segoe UI Semibold", "color": "#E6EEFB" },
+    "label":      { "fontSize": 11, "fontFace": "Segoe UI",       "color": "#9CA3AF" },
+    "callout":    { "fontSize": 36, "fontFace": "Segoe UI Bold",  "color": "#06B6D4" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#10223F" } }, "transparency": 10 }],
+        "border":     [{ "color": { "solid": { "color": "#1F3A60" } }, "show": true,  "radius": 6 }],
+        "title":      [{ "fontColor": { "solid": { "color": "#E6EEFB" } }, "alignment": "left", "fontSize": 13 }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#0B1424" } }, "transparency": 0 }]
+      }
+    }
+  }
+}

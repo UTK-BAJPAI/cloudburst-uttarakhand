@@ -1,0 +1,19 @@
+Timestamp,Location,District,Latitude,Longitude,PRECTOT,T2M,RH2M,WS2M,Probability,Risk_Level
+2026-05-05T16:01,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0.4,15.8,43.0,2.33,0.0025,Low
+2026-05-05T16:01,Badrinath (Chamoli),Chamoli,30.74,79.49,10.7,5.8,83.0,1.1,0.03250103440097032,Low
+2026-05-05T16:01,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1.4,10.4,65.0,0.73,0.013727486319468202,Low
+2026-05-05T16:01,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1.3,2.2,78.0,0.81,0.01471933414555516,Low
+2026-05-05T16:01,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0.9,-13.2,86.0,1.59,0.017764058009159842,Low
+2026-05-05T16:01,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,8.5,11.1,78.0,0.56,0.01496898291810766,Low
+2026-05-05T16:11,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0.4,15.8,43.0,2.33,0.0025,Low
+2026-05-05T16:11,Badrinath (Chamoli),Chamoli,30.74,79.49,10.7,5.8,83.0,1.1,0.03250103440097032,Low
+2026-05-05T16:11,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1.4,10.4,65.0,0.73,0.013727486319468202,Low
+2026-05-05T16:11,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1.3,2.2,78.0,0.81,0.01471933414555516,Low
+2026-05-05T16:11,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0.9,-13.2,86.0,1.59,0.017764058009159842,Low
+2026-05-05T16:11,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,8.5,11.1,78.0,0.56,0.01496898291810766,Low
+2026-05-05T16:12,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0.4,15.8,43.0,2.33,0.0025,Low
+2026-05-05T16:12,Badrinath (Chamoli),Chamoli,30.74,79.49,10.7,5.8,83.0,1.1,0.03250103440097032,Low
+2026-05-05T16:12,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1.4,10.4,65.0,0.73,0.013727486319468202,Low
+2026-05-05T16:12,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1.3,2.2,78.0,0.81,0.01471933414555516,Low
+2026-05-05T16:12,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0.9,-13.2,86.0,1.59,0.017764058009159842,Low
+2026-05-05T16:12,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,8.5,11.1,78.0,0.56,0.01496898291810766,Low
