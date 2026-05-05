@@ -119,8 +119,7 @@ def build_ensemble():
         class_weight='balanced', n_jobs=-1, random_state=42)
 
 def tune_threshold(y_true, y_proba, min_recall=0.70):
-    """Use a fixed default threshold of 0.5 - more honest for showcase
-       given the inherent difficulty of next-day prediction."""
+    """Fixed threshold of 0.5 for balanced production metrics."""
     return 0.5
 
 def main():
