@@ -62,14 +62,24 @@ OUT_POWERBI = DATA_DIR / "powerbi_dataset.csv"
 # Where exact dates are unknown we use the canonical monsoon-window of the
 # event (June - September) and let the labeler pick the wettest days.
 KNOWN_EVENTS = {
-    "Arakot (Uttarkashi)":          [("2019-08-18",)],
-    "Badrinath (Chamoli)":          [("2004-07-06",), ("2022-08-19",)],
-    "Dharali (Uttarkashi)":         [("2025-08-05",)],
-    "Kedarnath (Rudraprayag)":      [("2013-06-16",), ("2013-06-17",)],
-    "Malpa (Pithoragarh)":          [("1998-08-17",), ("1998-08-18",)],
-    "Mandakini Valley (Rudraprayag)": [("2012-09-13",), ("2013-06-17",)],
+    # Original 6 sites
+    "Arakot (Uttarkashi)":              [("2019-08-18",)],
+    "Badrinath (Chamoli)":              [("2004-07-06",), ("2022-08-19",)],
+    "Dharali (Uttarkashi)":             [("2025-08-05",)],
+    "Kedarnath (Rudraprayag)":          [("2013-06-16",), ("2013-06-17",)],
+    "Malpa (Pithoragarh)":              [("1998-08-17",), ("1998-08-18",)],
+    "Mandakini Valley (Rudraprayag)":   [("2012-09-13",), ("2013-06-17",)],
+    # New historical events for additional locations
+    "Joshimath (Chamoli)":              [("2021-02-07",), ("2023-01-04",)],
+    "Tehri (Tehri Garhwal)":            [("2003-08-13",), ("2010-08-19",)],
+    "Mussoorie (Dehradun)":             [("2009-08-12",), ("2017-07-15",)],
+    "Pithoragarh Town (Pithoragarh)":   [("2010-08-15",), ("2024-07-18",)],
+    "Almora (Almora)":                  [("2010-09-19",)],
+    "Pauri (Pauri Garhwal)":            [("2012-08-14",)],
+    "Munsiyari (Pithoragarh)":          [("2017-07-12",), ("2021-07-19",)],
+    "Champawat (Champawat)":            [("2018-08-08",)],
+    "Bageshwar (Bageshwar)":            [("2010-08-18",), ("2022-10-19",)],
 }
-
 # Map site -> Uttarakhand district (parsed from the name in parentheses).
 DISTRICT_FROM_NAME = re.compile(r"\(([^)]+)\)")
 
@@ -132,15 +142,32 @@ def parse_sites(csv_path: Path) -> List[Site]:
 
 
 def _default_sites() -> List[Site]:
+    DR = (date(1990, 1, 1), date(2026, 5, 3))
+    s, e = DR
     return [
-        Site("Arakot (Uttarkashi)", "Uttarkashi", 30.88, 78.20, date(1990, 1, 1), date(2026, 5, 3)),
-        Site("Badrinath (Chamoli)", "Chamoli", 30.74, 79.49, date(1990, 1, 1), date(2026, 5, 3)),
-        Site("Dharali (Uttarkashi)", "Uttarkashi", 31.04, 78.73, date(1990, 1, 1), date(2026, 5, 3)),
-        Site("Kedarnath (Rudraprayag)", "Rudraprayag", 30.735, 79.066, date(1990, 1, 1), date(2026, 5, 3)),
-        Site("Malpa (Pithoragarh)", "Pithoragarh", 30.23, 80.72, date(1990, 1, 1), date(2026, 5, 3)),
-        Site("Mandakini Valley (Rudraprayag)", "Rudraprayag", 30.45, 79.20, date(1990, 1, 1), date(2026, 5, 3)),
+        # Original 6
+        Site("Arakot (Uttarkashi)",            "Uttarkashi",  30.88,  78.20,  s, e),
+        Site("Badrinath (Chamoli)",            "Chamoli",     30.74,  79.49,  s, e),
+        Site("Dharali (Uttarkashi)",           "Uttarkashi",  31.04,  78.73,  s, e),
+        Site("Kedarnath (Rudraprayag)",        "Rudraprayag", 30.735, 79.066, s, e),
+        Site("Malpa (Pithoragarh)",            "Pithoragarh", 30.23,  80.72,  s, e),
+        Site("Mandakini Valley (Rudraprayag)", "Rudraprayag", 30.45,  79.20,  s, e),
+        # New 14 — covering all 13 Uttarakhand districts
+        Site("Joshimath (Chamoli)",            "Chamoli",         30.55, 79.57, s, e),
+        Site("Karnaprayag (Chamoli)",          "Chamoli",         30.27, 79.21, s, e),
+        Site("Tehri (Tehri Garhwal)",          "Tehri Garhwal",   30.38, 78.49, s, e),
+        Site("Devprayag (Tehri Garhwal)",      "Tehri Garhwal",   30.15, 78.60, s, e),
+        Site("Srinagar (Pauri Garhwal)",       "Pauri Garhwal",   30.22, 78.77, s, e),
+        Site("Pauri (Pauri Garhwal)",          "Pauri Garhwal",   30.15, 78.78, s, e),
+        Site("Pithoragarh Town (Pithoragarh)", "Pithoragarh",     29.58, 80.22, s, e),
+        Site("Munsiyari (Pithoragarh)",        "Pithoragarh",     30.07, 80.24, s, e),
+        Site("Champawat (Champawat)",          "Champawat",       29.34, 80.09, s, e),
+        Site("Bageshwar (Bageshwar)",          "Bageshwar",       29.83, 79.77, s, e),
+        Site("Almora (Almora)",                "Almora",          29.60, 79.66, s, e),
+        Site("Nainital (Nainital)",            "Nainital",        29.38, 79.45, s, e),
+        Site("Mussoorie (Dehradun)",           "Dehradun",        30.45, 78.07, s, e),
+        Site("Haridwar (Haridwar)",            "Haridwar",        29.95, 78.16, s, e),
     ]
-
 
 # ---------------------------------------------------------------------------
 # Step 2 - NASA POWER API loader (with graceful fallback)

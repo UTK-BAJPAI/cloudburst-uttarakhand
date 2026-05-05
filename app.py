@@ -177,20 +177,43 @@ with hcol:
         st.write("No historical data available.")
 
 
-# ===== LIVE MONITOR SECTION (cloud-friendly inline fetch) =====
+# ===== LIVE MONITOR SECTION — 20 sites + interactive map =====
 import requests as _rq
+import pydeck as _pdk
 
 LIVE_SITES = [
-    ("Arakot (Uttarkashi)",            "Uttarkashi",  30.88,  78.20),
-    ("Badrinath (Chamoli)",            "Chamoli",     30.74,  79.49),
-    ("Dharali (Uttarkashi)",           "Uttarkashi",  31.04,  78.73),
-    ("Kedarnath (Rudraprayag)",        "Rudraprayag", 30.735, 79.066),
-    ("Malpa (Pithoragarh)",            "Pithoragarh", 30.23,  80.72),
-    ("Mandakini Valley (Rudraprayag)", "Rudraprayag", 30.45,  79.20),
+    ("Arakot (Uttarkashi)",            "Uttarkashi",     30.88,  78.20),
+    ("Badrinath (Chamoli)",            "Chamoli",        30.74,  79.49),
+    ("Dharali (Uttarkashi)",           "Uttarkashi",     31.04,  78.73),
+    ("Kedarnath (Rudraprayag)",        "Rudraprayag",    30.735, 79.066),
+    ("Malpa (Pithoragarh)",            "Pithoragarh",    30.23,  80.72),
+    ("Mandakini Valley (Rudraprayag)", "Rudraprayag",    30.45,  79.20),
+    ("Joshimath (Chamoli)",            "Chamoli",        30.55,  79.57),
+    ("Karnaprayag (Chamoli)",          "Chamoli",        30.27,  79.21),
+    ("Tehri (Tehri Garhwal)",          "Tehri Garhwal",  30.38,  78.49),
+    ("Devprayag (Tehri Garhwal)",      "Tehri Garhwal",  30.15,  78.60),
+    ("Srinagar (Pauri Garhwal)",       "Pauri Garhwal",  30.22,  78.77),
+    ("Pauri (Pauri Garhwal)",          "Pauri Garhwal",  30.15,  78.78),
+    ("Pithoragarh Town (Pithoragarh)", "Pithoragarh",    29.58,  80.22),
+    ("Munsiyari (Pithoragarh)",        "Pithoragarh",    30.07,  80.24),
+    ("Champawat (Champawat)",          "Champawat",      29.34,  80.09),
+    ("Bageshwar (Bageshwar)",          "Bageshwar",      29.83,  79.77),
+    ("Almora (Almora)",                "Almora",         29.60,  79.66),
+    ("Nainital (Nainital)",            "Nainital",       29.38,  79.45),
+    ("Mussoorie (Dehradun)",           "Dehradun",       30.45,  78.07),
+    ("Haridwar (Haridwar)",            "Haridwar",       29.95,  78.16),
 ]
 
 
-@st.cache_data(ttl=3600, show_spinner="Fetching live weather...")
+def _risk_color(level):
+    return {
+        "Low":    [16, 185, 129, 200],
+        "Medium": [245, 158, 11, 220],
+        "High":   [239, 68, 68, 240],
+    }.get(level, [128, 128, 128, 200])
+
+
+@st.cache_data(ttl=3600, show_spinner="Fetching live weather for 20 sites...")
 def _fetch_live(model_id):
     url = "https://api.open-meteo.com/v1/forecast"
     rows = []
@@ -213,9 +236,12 @@ def _fetch_live(model_id):
                 model=model, scaler=scaler, metadata=metadata)
             rows.append({
                 "Location": name, "District": district,
-                "Rain (mm)": rain, "Temp (C)": cur["temperature_2m"],
+                "Latitude": lat, "Longitude": lon,
+                "Rain (mm)": rain,
+                "Temp (C)": cur["temperature_2m"],
                 "Humidity (%)": cur["relative_humidity_2m"],
-                "Probability": res["probability"], "Risk_Level": res["risk_level"],
+                "Probability": res["probability"],
+                "Risk_Level": res["risk_level"],
             })
         except Exception:
             continue
@@ -223,7 +249,7 @@ def _fetch_live(model_id):
 
 
 st.divider()
-st.subheader(":satellite: Live Real-Time Monitor")
+st.subheader(":satellite: Live Real-Time Monitor — All 20 Uttarakhand Sites")
 latest, fetched_at = _fetch_live(id(model))
 
 if latest.empty:
@@ -231,20 +257,63 @@ if latest.empty:
 else:
     high = latest[latest["Risk_Level"] == "High"]
     medium = latest[latest["Risk_Level"] == "Medium"]
-    c1, c2, c3 = st.columns(3)
-    c1.metric("HIGH risk sites", len(high))
-    c2.metric("MEDIUM risk sites", len(medium))
-    c3.metric("Last fetched", fetched_at.strftime("%H:%M, %d %b"))
+    low = latest[latest["Risk_Level"] == "Low"]
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Total sites", len(latest))
+    c2.metric("🔴 HIGH", len(high))
+    c3.metric("🟡 MEDIUM", len(medium))
+    c4.metric("🟢 LOW", len(low))
 
     if not high.empty:
-        st.error(f":rotating_light: {len(high)} HIGH-risk site(s) right now!")
+        st.error(f"⚠ {len(high)} HIGH-risk site(s) right now!")
     elif not medium.empty:
-        st.warning(f":warning: {len(medium)} MEDIUM-risk site(s)")
+        st.warning(f"⚠ {len(medium)} MEDIUM-risk site(s)")
     else:
-        st.success(":white_check_mark: All sites Low risk - normal conditions")
+        st.success(f"✓ All {len(latest)} sites Low risk — normal conditions")
 
-    st.dataframe(latest, use_container_width=True, hide_index=True)
+    # ----- Interactive risk map -----
+    st.markdown("##### 🗺️ Risk Map of Uttarakhand")
+    map_df = latest.copy()
+    map_df["color"] = map_df["Risk_Level"].apply(_risk_color)
+    map_df["radius"] = (map_df["Probability"] * 6000 + 3500).astype(int)
 
-    if st.button(":arrows_counterclockwise: Refresh now"):
+    st.pydeck_chart(_pdk.Deck(
+        map_style=None,  # Carto default - no Mapbox token needed
+        initial_view_state=_pdk.ViewState(
+            latitude=30.05, longitude=79.3, zoom=7, pitch=35,
+        ),
+        layers=[_pdk.Layer(
+            "ScatterplotLayer",
+            data=map_df,
+            get_position=["Longitude", "Latitude"],
+            get_fill_color="color",
+            get_radius="radius",
+            pickable=True,
+            opacity=0.85,
+            stroked=True,
+            filled=True,
+            line_width_min_pixels=1,
+        )],
+        tooltip={
+            "html": "<b>{Location}</b><br/>"
+                    "District: {District}<br/>"
+                    "Risk: <b>{Risk_Level}</b><br/>"
+                    "Probability: {Probability}<br/>"
+                    "Rain: {Rain (mm)} mm",
+            "style": {"color": "white", "background": "rgba(15,27,48,0.92)"},
+        },
+    ))
+    st.caption(f"🟢 Low  •  🟡 Medium  •  🔴 High   |   Last fetched: "
+               f"{fetched_at.strftime('%H:%M, %d %b %Y')}   |   Source: Open-Meteo")
+
+    st.markdown("##### 📊 Site-wise Detail")
+    st.dataframe(
+        latest[["Location", "District", "Rain (mm)", "Temp (C)",
+                "Humidity (%)", "Probability", "Risk_Level"]],
+        use_container_width=True, hide_index=True,
+    )
+
+    if st.button("🔄 Refresh now"):
         st.cache_data.clear()
         st.rerun()
