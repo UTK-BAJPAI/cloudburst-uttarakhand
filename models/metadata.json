@@ -1,33 +1,50 @@
 {
   "feature_cols": [
-    "PRECTOT",
     "T2M",
     "RH2M",
     "WS2M",
-    "Rainfall_Intensity",
-    "Humidity_Rainfall",
+    "T2M_lag1",
+    "RH2M_lag1",
+    "WS2M_lag1",
+    "PRECTOT_lag1",
+    "PRECTOT_3d_mean",
+    "RH2M_3d_mean",
+    "T2M_3d_mean",
     "Temperature_Change",
+    "Humidity_Change",
     "Heat_Index",
     "Month_sin",
     "Month_cos"
   ],
-  "tuned_threshold": 0.8961397283594066,
+  "tuned_threshold": 0.5,
   "sklearn": true,
+  "predictive_horizon_days": 1,
+  "cv": {
+    "auc_mean": 0.7182761517089875,
+    "auc_std": 0.05555185952793171,
+    "acc_mean": 0.7231799650553292,
+    "acc_std": 0.04031934647951055
+  },
   "metrics": {
-    "roc_auc": 1.0,
-    "accuracy_default": 1.0,
-    "accuracy_tuned": 1.0
+    "roc_auc": 0.6059701492537314,
+    "accuracy_default": 0.6764705882352942,
+    "accuracy_tuned": 0.6764705882352942
   },
   "feature_importance": {
-    "PRECTOT": 0.2743350666289385,
-    "T2M": 0.004678306114105798,
-    "RH2M": 0.11676046106797841,
-    "WS2M": 0.031290378213764104,
-    "Rainfall_Intensity": 0.28338806971263036,
-    "Humidity_Rainfall": 0.26219031492044514,
-    "Temperature_Change": 0.0014468441048935638,
-    "Heat_Index": 0.015951802472159535,
-    "Month_sin": 0.004727740666697852,
-    "Month_cos": 0.00523101609838677
+    "T2M": 0.05534836528694888,
+    "RH2M": 0.08678669707037284,
+    "WS2M": 0.12744790712112794,
+    "T2M_lag1": 0.05643039836293211,
+    "RH2M_lag1": 0.05552795288632558,
+    "WS2M_lag1": 0.08363800895884718,
+    "PRECTOT_lag1": 0.04897584408051621,
+    "PRECTOT_3d_mean": 0.11803375535988278,
+    "RH2M_3d_mean": 0.06827373967061882,
+    "T2M_3d_mean": 0.055076788184686296,
+    "Temperature_Change": 0.06387581677289951,
+    "Humidity_Change": 0.06999975260433737,
+    "Heat_Index": 0.05331114122151814,
+    "Month_sin": 0.029946203295276266,
+    "Month_cos": 0.027327629123710097
   }
 }

@@ -1,139 +1,547 @@
 Date,PRECTOT,T2M,RH2M,WS2M,Location,District,Latitude,Longitude,Cloudburst,Year,Month,MonthName,Season
-2001-04-05,0.0,6.6000000000000005,36.56,2.52,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2001,4,Apr,Spring
-2009-07-16,7.99,9.92,80.28,2.75,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2009,7,Jul,Monsoon
-2002-06-15,0.93,6.96,58.38,2.56,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2002,6,Jun,Monsoon
-1990-10-27,0.0,4.6499999999999995,40.58,2.22,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1990,10,Oct,Autumn
-2013-06-15,149.38229160542318,11.205,91.39,3.5,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
-2002-01-03,0.0,-0.38500000000000023,24.69,2.32,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2002,1,Jan,Winter
-1998-08-16,172.08570228913993,13.995000000000001,88.0,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
-1998-05-11,0.0,6.6450000000000005,63.38,2.65,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1998,5,May,Spring
-2022-08-18,170.23859363951226,14.935,88.0,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,8,Aug,Monsoon
-2020-02-23,325.96,-2.365,82.62,1.28,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2020,2,Feb,Winter
-2022-09-23,113.57,10.67,89.28,1.93,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2022,9,Sep,Monsoon
-2019-09-27,22.75,10.575,88.33,1.99,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2019,9,Sep,Monsoon
-1995-09-24,0.0,10.36,72.92,2.13,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1995,9,Sep,Monsoon
-2000-05-11,0.0,20.235,42.21,2.82,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2000,5,May,Spring
-2004-05-07,0.0,11.174999999999999,46.9,2.41,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2004,5,May,Spring
-1998-07-28,11.66,14.32,86.99,2.38,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1998,7,Jul,Monsoon
-2026-03-27,128.2,-2.38,85.92,1.82,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2026,3,Mar,Spring
-1992-06-29,18.5,17.425,58.15,2.76,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1992,6,Jun,Monsoon
-1992-10-31,0.0,-0.2999999999999998,61.93,1.97,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1992,10,Oct,Autumn
-1990-05-19,0.0,4.615,59.17,2.98,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1990,5,May,Spring
-2016-11-17,0.0,4.47,30.93,2.53,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2016,11,Nov,Autumn
-1993-01-07,4.11,-5.505,92.43,3.6,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1993,1,Jan,Winter
-2013-12-21,0.07,-3.0500000000000003,80.35,2.38,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2013,12,Dec,Winter
-2022-08-28,8.13,10.035,88.09,3.44,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2022,8,Aug,Monsoon
-2026-01-27,16.38,-7.965,93.2,4.71,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2026,1,Jan,Winter
-1997-09-12,0.06,13.01,81.75,2.64,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1997,9,Sep,Monsoon
-2022-08-31,0.26,15.2,84.58,2.66,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2022,8,Aug,Monsoon
-2004-07-05,211.97151671559703,14.169999999999998,91.6,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2004,7,Jul,Monsoon
-2010-07-30,128.88,13.145,93.44,2.59,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2010,7,Jul,Monsoon
-2002-04-19,0.0,10.5,22.47,2.93,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2002,4,Apr,Spring
-2022-09-23,111.16,6.6,89.77,2.3,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2022,9,Sep,Monsoon
-2004-10-08,0.0,12.275,52.63,2.32,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2004,10,Oct,Autumn
-1998-07-08,1.24,11.59,82.67,2.34,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1998,7,Jul,Monsoon
-2007-10-28,0.0,6.345,45.61,1.79,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2007,10,Oct,Autumn
-2022-05-07,0.68,15.225,54.73,2.6,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2022,5,May,Spring
-2004-05-03,0.0,12.219999999999999,33.39,3.15,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2004,5,May,Spring
-2012-09-14,154.45163075183697,10.829999999999998,98.55,3.67,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2012,9,Sep,Monsoon
-2010-01-06,0.0,1.2599999999999998,22.66,2.46,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2010,1,Jan,Winter
-2013-12-12,0.0,0.16999999999999993,46.16,2.24,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2013,12,Dec,Winter
-1993-06-02,0.0,12.655,46.22,2.84,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1993,6,Jun,Monsoon
-2021-02-04,10.68,-3.16,77.98,2.21,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2021,2,Feb,Winter
-1995-11-28,0.22,-8.07,73.24,2.6,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1995,11,Nov,Autumn
-2012-09-13,213.38123028246878,12.82,96.02,3.8,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2012,9,Sep,Monsoon
-2022-08-20,219.6852795382259,12.07,89.22,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,8,Aug,Monsoon
-1992-08-11,0.4,14.62,77.88,2.66,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1992,8,Aug,Monsoon
-1999-10-14,0.0,10.785,43.87,2.21,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1999,10,Oct,Autumn
-2021-10-18,107.25,6.78,91.31,0.97,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2021,10,Oct,Autumn
-2010-07-30,128.88,13.145,93.44,2.59,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2010,7,Jul,Monsoon
-2007-01-31,0.0,1.9500000000000002,29.59,2.53,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2007,1,Jan,Winter
-1991-11-27,0.0,6.510000000000001,50.43,2.02,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1991,11,Nov,Autumn
-2009-05-18,0.0,14.285,33.17,2.57,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2009,5,May,Spring
-1991-10-07,0.0,9.39,53.91,2.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1991,10,Oct,Autumn
-2010-07-30,121.2,10.135,90.72,2.95,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2010,7,Jul,Monsoon
-2024-11-13,0.0,6.795,41.38,1.91,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2024,11,Nov,Autumn
-2025-08-06,144.61017000976167,8.309999999999999,93.32,3.5,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2025,8,Aug,Monsoon
-2022-09-23,113.57,10.67,89.28,1.93,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,9,Sep,Monsoon
-2012-12-13,5.84,0.605,89.51,2.3,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2012,12,Dec,Winter
-2019-08-18,169.57190183039177,15.190000000000001,92.62,3.5,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2019,8,Aug,Monsoon
-2000-12-29,0.0,-7.13,18.36,1.97,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2000,12,Dec,Winter
-2012-07-27,9.14,14.325,91.32,3.02,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2012,7,Jul,Monsoon
-2013-06-16,142.3,9.79,96.4,3.5,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2013,6,Jun,Monsoon
-2013-06-18,134.43278077991428,10.295,88.0,3.5,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2013,6,Jun,Monsoon
-1998-08-17,163.12916761823934,14.580000000000002,88.26,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
-2022-08-19,155.93307383944307,13.265,93.76,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,8,Aug,Monsoon
-1996-06-18,0.0,15.58,61.91,2.24,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1996,6,Jun,Monsoon
-1992-10-15,0.0,3.27,49.92,2.42,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1992,10,Oct,Autumn
-2025-11-20,0.0,4.095,67.32,1.96,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2025,11,Nov,Autumn
-2023-07-25,17.33,17.935,88.7,1.84,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2023,7,Jul,Monsoon
-2008-03-10,0.0,5.055,18.05,2.29,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2008,3,Mar,Spring
-2025-08-04,163.0029092919337,10.41,89.99,3.5,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2025,8,Aug,Monsoon
-1995-06-24,0.27,12.945,58.81,2.4,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1995,6,Jun,Monsoon
-2019-08-17,138.0459900249537,16.775000000000002,91.7,3.5,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2019,8,Aug,Monsoon
-2005-06-07,0.03,13.825,50.45,3.09,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2005,6,Jun,Monsoon
-1997-05-28,0.22,11.9,52.9,3.05,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1997,5,May,Spring
-2006-05-09,0.05,16.27,57.61,3.02,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2006,5,May,Spring
-1998-08-18,118.48334824193452,14.82,88.0,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
-2020-04-21,388.49,1.665,93.37,2.33,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2020,4,Apr,Spring
-2015-12-09,0.04,6.66,48.61,1.87,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2015,12,Dec,Winter
-1996-07-29,1.67,15.85,87.89,2.62,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1996,7,Jul,Monsoon
-2022-09-23,113.57,10.67,89.28,1.93,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2022,9,Sep,Monsoon
-2001-06-08,0.01,11.41,74.33,2.57,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2001,6,Jun,Monsoon
-2025-01-27,0.0,3.6500000000000004,27.06,2.06,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2025,1,Jan,Winter
-2009-07-09,2.21,14.66,86.85,2.27,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2009,7,Jul,Monsoon
-2010-07-30,128.88,13.145,93.44,2.59,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2010,7,Jul,Monsoon
-2020-10-09,0.0,4.859999999999999,37.65,2.01,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2020,10,Oct,Autumn
-2016-05-21,0.35,13.055,54.98,3.34,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2016,5,May,Spring
-2010-08-04,16.92,17.255,85.78,2.15,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2010,8,Aug,Monsoon
-2012-12-23,0.0,2.55,35.32,1.3,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2012,12,Dec,Winter
-2021-10-18,106.43,6.2749999999999995,94.53,1.92,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2021,10,Oct,Autumn
-2021-10-18,107.25,6.78,91.31,0.97,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2021,10,Oct,Autumn
-2010-08-18,50.55,8.935,93.16,2.05,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2010,8,Aug,Monsoon
-2023-02-05,0.01,-6.225,72.93,2.33,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2023,2,Feb,Winter
-2010-10-19,0.0,3.775,73.22,1.66,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2010,10,Oct,Autumn
-1998-08-19,151.43232428826536,13.015,88.0,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
-2013-06-16,153.7,5.38,96.22,6.02,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2013,6,Jun,Monsoon
-2003-01-01,0.0,-3.2699999999999996,45.97,2.6,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2003,1,Jan,Winter
-2013-06-16,153.72,11.760000000000002,95.45,3.25,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2013,6,Jun,Monsoon
-2006-09-16,1.79,11.385,84.92,2.04,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2006,9,Sep,Monsoon
-1998-05-14,0.0,4.79,62.29,3.01,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1998,5,May,Spring
-2017-11-27,0.0,-2.875,38.52,2.38,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2017,11,Nov,Autumn
-1998-08-01,21.98,15.35,90.05,2.55,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1998,8,Aug,Monsoon
-2004-12-12,0.0,5.07,23.91,1.97,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2004,12,Dec,Winter
-1996-05-18,0.0,9.79,47.17,2.81,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1996,5,May,Spring
-2013-06-16,142.3,9.79,96.4,3.45,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2013,6,Jun,Monsoon
-2019-08-19,192.54859556900215,15.97,88.0,3.5,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2019,8,Aug,Monsoon
-2012-09-12,186.92391845520004,12.209999999999999,91.43,3.5,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2012,9,Sep,Monsoon
-1991-11-21,0.0,2.1050000000000004,21.84,1.83,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1991,11,Nov,Autumn
-2005-01-24,0.0,0.43499999999999983,59.86,1.59,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2005,1,Jan,Winter
-2011-12-17,0.0,-5.8,40.81,1.68,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2011,12,Dec,Winter
-2020-05-03,372.17,6.01,81.91,2.1,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2020,5,May,Spring
-2000-06-27,0.86,10.04,83.91,2.63,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2000,6,Jun,Monsoon
-2005-10-29,0.0,9.255,38.02,2.33,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2005,10,Oct,Autumn
-1994-12-26,0.09,-0.355,38.41,1.46,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1994,12,Dec,Winter
-2011-12-02,0.0,5.885000000000001,46.85,2.04,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2011,12,Dec,Winter
-2013-06-17,112.63385976171195,10.305,95.0,4.48,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
-2023-09-11,2.25,13.85,86.64,2.19,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2023,9,Sep,Monsoon
-2017-08-29,3.43,12.739999999999998,84.82,1.58,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2017,8,Aug,Monsoon
-2004-04-11,0.0,14.895,27.94,3.11,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2004,4,Apr,Spring
-2010-09-18,52.34,10.59,90.97,1.72,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2010,9,Sep,Monsoon
-2021-11-15,0.0,-0.0950000000000002,43.13,1.86,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2021,11,Nov,Autumn
-2025-08-05,158.86670212309298,9.33,94.78,4.21,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2025,8,Aug,Monsoon
-2004-07-06,156.33472397426988,13.940000000000001,91.55,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2004,7,Jul,Monsoon
-2014-07-09,0.58,14.93,74.06,2.98,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2014,7,Jul,Monsoon
-2006-11-02,0.0,-0.7599999999999998,79.02,1.48,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2006,11,Nov,Autumn
-2010-07-30,119.67,18.465,90.24,2.87,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2010,7,Jul,Monsoon
-2021-10-18,107.25,6.78,91.31,0.97,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2021,10,Oct,Autumn
-2004-07-07,197.25549829273527,14.395,88.0,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2004,7,Jul,Monsoon
-2008-03-20,0.0,2.545,45.48,2.53,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2008,3,Mar,Spring
-2006-09-18,0.34,15.614999999999998,86.67,1.99,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2006,9,Sep,Monsoon
-2013-06-17,140.52012394879165,10.305,95.0,4.48,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2013,6,Jun,Monsoon
-2001-08-29,11.44,6.694999999999999,87.43,2.38,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2001,8,Aug,Monsoon
-2011-01-21,0.0,2.535,57.62,1.99,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2011,1,Jan,Winter
-2023-02-10,0.79,0.25,80.91,3.28,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2023,2,Feb,Winter
-2013-06-16,142.3,9.79,96.4,3.5,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
-2002-01-19,1.03,-11.514999999999999,83.28,2.74,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2002,1,Jan,Winter
-2010-11-04,0.0,6.6000000000000005,57.45,2.0,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2010,11,Nov,Autumn
-2003-08-12,9.01,17.08,79.12,2.0,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2003,8,Aug,Monsoon
-2013-06-18,197.69530232726265,10.295,88.0,3.5,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
+2000-01-05,0.0,-0.54,13.72,2.09,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2000,1,Jan,Winter
+2025-08-05,107.21,22.65,95.14,3.08,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,1,2025,8,Aug,Monsoon
+1996-10-30,0.0,16.8,55.88,2.0,Nainital (Nainital),Nainital,29.38,79.45,0,1996,10,Oct,Autumn
+2014-04-17,2.2,4.52,68.03,2.89,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2014,4,Apr,Spring
+2015-02-03,5.05,10.12,72.5,3.99,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2015,2,Feb,Winter
+2019-08-19,192.54859556900215,16.36,88.0,3.5,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2019,8,Aug,Monsoon
+2022-09-23,101.2,10.93,87.32,1.82,Karnaprayag (Chamoli),Chamoli,30.27,79.21,1,2022,9,Sep,Monsoon
+2002-06-16,3.47,21.08,40.75,2.93,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2002,6,Jun,Monsoon
+2018-04-25,0.0,9.84,49.95,2.83,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2018,4,Apr,Spring
+2010-08-18,185.11762335861306,16.47,91.41,3.5,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2010,8,Aug,Monsoon
+2002-03-16,0.0,2.67,50.99,2.84,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2002,3,Mar,Spring
+2009-08-12,213.38123028246878,24.12,88.0,3.5,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2009,8,Aug,Monsoon
+2013-05-05,0.0,1.48,69.13,3.27,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2013,5,May,Spring
+2008-05-13,0.5,26.23,33.32,2.54,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2008,5,May,Spring
+2010-09-18,174.8116317056132,20.81,89.7,3.5,Almora (Almora),Almora,29.6,79.66,1,2010,9,Sep,Monsoon
+2005-05-21,0.0,28.86,20.23,2.87,Almora (Almora),Almora,29.6,79.66,0,2005,5,May,Spring
+1990-09-08,146.74,17.75,87.6,1.18,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,1990,9,Sep,Monsoon
+2020-02-23,300.78,8.24,85.44,1.95,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2020,2,Feb,Winter
+2000-02-23,0.0,0.68,31.94,2.45,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2000,2,Feb,Winter
+2011-06-26,16.23,17.36,91.61,2.33,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2011,6,Jun,Monsoon
+2020-09-28,0.0,19.71,59.37,2.16,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2020,9,Sep,Monsoon
+1991-06-14,0.0,28.98,46.25,2.07,Nainital (Nainital),Nainital,29.38,79.45,0,1991,6,Jun,Monsoon
+1991-06-19,126.71,22.51,61.98,1.73,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,1,1991,6,Jun,Monsoon
+2005-01-07,0.0,10.02,34.46,1.81,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2005,1,Jan,Winter
+1995-08-28,3.29,11.8,95.69,2.38,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1995,8,Aug,Monsoon
+2018-07-31,0.7,8.63,91.57,3.16,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2018,7,Jul,Monsoon
+2006-04-01,0.0,5.57,55.69,2.79,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2006,4,Apr,Spring
+1993-06-11,1.92,27.88,26.29,3.07,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,1993,6,Jun,Monsoon
+1997-03-14,0.89,19.15,35.99,2.82,Haridwar (Haridwar),Haridwar,29.95,78.16,0,1997,3,Mar,Spring
+2022-10-18,129.21262340641272,10.98,88.0,3.5,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2022,10,Oct,Autumn
+2026-02-23,0.0,0.48,57.71,2.68,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2026,2,Feb,Winter
+2025-04-16,1.3,15.21,59.25,2.49,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2025,4,Apr,Spring
+2003-09-29,0.1,20.87,75.64,1.98,Almora (Almora),Almora,29.6,79.66,0,2003,9,Sep,Monsoon
+1999-06-24,0.0,7.55,74.81,3.02,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1999,6,Jun,Monsoon
+2005-09-16,100.38,18.46,89.51,2.84,Champawat (Champawat),Champawat,29.34,80.09,1,2005,9,Sep,Monsoon
+1998-08-16,172.08570228913993,13.38,88.0,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
+1995-07-26,1.29,24.92,76.93,3.07,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,1995,7,Jul,Monsoon
+2012-08-13,151.75698089311396,23.0,88.0,3.5,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,2012,8,Aug,Monsoon
+2002-07-08,0.0,21.36,45.14,2.94,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2002,7,Jul,Monsoon
+2018-05-14,0.64,9.43,60.59,2.97,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2018,5,May,Spring
+2022-10-09,101.68,15.66,92.52,2.82,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2022,10,Oct,Autumn
+2013-06-16,119.62,6.51,96.84,6.25,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2013,6,Jun,Monsoon
+1991-08-27,106.45,23.63,86.37,1.79,Nainital (Nainital),Nainital,29.38,79.45,1,1991,8,Aug,Monsoon
+2016-08-05,18.54,13.33,91.71,2.6,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2016,8,Aug,Monsoon
+2013-04-28,0.0,1.68,86.11,2.87,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2013,4,Apr,Spring
+2012-09-13,213.38123028246878,13.07,96.02,3.65,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2012,9,Sep,Monsoon
+2017-08-25,1.71,17.25,87.41,2.06,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2017,8,Aug,Monsoon
+1999-03-01,0.0,12.7,40.28,2.74,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,1999,3,Mar,Spring
+2023-02-15,0.0,12.3,49.92,2.06,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2023,2,Feb,Winter
+2003-08-13,219.97909030204164,18.28,88.0,3.5,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2003,8,Aug,Monsoon
+2012-07-20,8.24,27.59,68.31,1.64,Almora (Almora),Almora,29.6,79.66,0,2012,7,Jul,Monsoon
+1997-01-21,6.34,5.26,73.3,1.83,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,1997,1,Jan,Winter
+2003-08-07,1.49,23.84,83.37,2.02,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2003,8,Aug,Monsoon
+2010-11-18,8.16,15.52,79.62,2.08,Nainital (Nainital),Nainital,29.38,79.45,0,2010,11,Nov,Autumn
+1992-04-02,0.0,17.82,25.06,2.93,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,1992,4,Apr,Spring
+1990-03-04,0.0,-2.46,58.6,2.53,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1990,3,Mar,Spring
+2011-06-30,135.81,20.98,88.75,1.6,Champawat (Champawat),Champawat,29.34,80.09,1,2011,6,Jun,Monsoon
+1991-06-19,136.44,16.44,68.62,1.72,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,1991,6,Jun,Monsoon
+1998-08-18,118.48334824193452,14.43,88.0,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
+2017-07-15,134.43278077991428,23.04,88.0,3.5,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2017,7,Jul,Monsoon
+2022-10-31,0.0,5.36,63.58,1.91,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2022,10,Oct,Autumn
+1990-09-08,129.46,21.3,88.37,1.67,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,1990,9,Sep,Monsoon
+2020-04-08,0.6,17.8,50.07,2.75,Champawat (Champawat),Champawat,29.34,80.09,0,2020,4,Apr,Spring
+2010-08-30,14.55,23.73,89.99,2.26,Nainital (Nainital),Nainital,29.38,79.45,0,2010,8,Aug,Monsoon
+1997-02-17,0.09,9.8,28.71,2.46,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,1997,2,Feb,Winter
+1993-02-17,0.25,1.02,69.06,3.52,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1993,2,Feb,Winter
+1990-10-15,0.0,5.31,60.36,2.16,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1990,10,Oct,Autumn
+2021-10-18,137.4,11.28,91.11,1.91,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2021,10,Oct,Autumn
+2022-05-06,0.96,15.7,57.88,2.73,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2022,5,May,Spring
+1999-01-21,0.02,-1.31,75.02,1.98,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1999,1,Jan,Winter
+2021-02-06,175.9868149046262,-4.29,88.0,3.5,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2021,2,Feb,Winter
+2006-01-18,0.01,13.27,54.66,2.06,Nainital (Nainital),Nainital,29.38,79.45,0,2006,1,Jan,Winter
+2018-05-07,2.06,25.56,31.45,3.61,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2018,5,May,Spring
+2004-06-18,104.58,20.87,87.72,1.43,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2004,6,Jun,Monsoon
+2005-06-18,0.0,36.34,18.28,4.19,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2005,6,Jun,Monsoon
+2005-09-16,100.38,18.46,89.51,2.84,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2005,9,Sep,Monsoon
+2023-06-07,0.35,10.54,66.14,3.1,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2023,6,Jun,Monsoon
+1991-04-30,0.0,16.8,23.95,3.54,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1991,4,Apr,Spring
+2019-10-23,0.0,5.16,49.39,2.25,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2019,10,Oct,Autumn
+1997-12-03,0.0,-0.65,46.49,1.48,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,1997,12,Dec,Winter
+2003-08-14,174.3896067044996,18.31,88.0,3.5,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2003,8,Aug,Monsoon
+2013-03-04,0.0,11.69,47.53,2.03,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2013,3,Mar,Spring
+2006-10-04,0.0,9.18,63.01,2.23,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2006,10,Oct,Autumn
+2020-02-23,246.15,3.07,85.22,1.72,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2020,2,Feb,Winter
+2022-09-23,101.2,10.93,87.32,1.82,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2022,9,Sep,Monsoon
+2018-08-26,5.22,16.4,87.67,2.09,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2018,8,Aug,Monsoon
+2004-07-21,0.65,22.78,63.19,2.36,Champawat (Champawat),Champawat,29.34,80.09,0,2004,7,Jul,Monsoon
+2024-08-07,7.52,12.93,92.57,2.02,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2024,8,Aug,Monsoon
+2006-12-18,0.0,11.27,35.42,2.19,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2006,12,Dec,Winter
+1991-06-19,114.16,20.79,66.64,1.67,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,1991,6,Jun,Monsoon
+2019-12-15,1.44,-6.24,77.46,1.56,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2019,12,Dec,Winter
+2013-10-29,0.0,16.72,65.21,2.56,Nainital (Nainital),Nainital,29.38,79.45,0,2013,10,Oct,Autumn
+2018-04-28,0.67,9.79,52.6,2.89,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2018,4,Apr,Spring
+2000-02-15,0.0,4.31,39.4,2.58,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2000,2,Feb,Winter
+2002-01-07,0.0,-1.59,34.63,2.05,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2002,1,Jan,Winter
+1991-08-04,104.01,27.6,82.46,2.82,Haridwar (Haridwar),Haridwar,29.95,78.16,1,1991,8,Aug,Monsoon
+2024-03-21,0.0,15.18,52.07,2.44,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2024,3,Mar,Spring
+2010-08-20,126.8023741727483,18.07,91.77,3.5,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2010,8,Aug,Monsoon
+2021-01-01,0.0,14.1,23.23,1.96,Almora (Almora),Almora,29.6,79.66,0,2021,1,Jan,Winter
+2026-04-20,0.11,7.56,47.43,1.27,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2026,4,Apr,Spring
+2019-03-05,0.45,-9.53,89.12,2.06,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2019,3,Mar,Spring
+1996-11-23,0.0,2.26,33.52,1.52,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1996,11,Nov,Autumn
+2010-07-30,127.5,22.67,93.77,3.57,Almora (Almora),Almora,29.6,79.66,1,2010,7,Jul,Monsoon
+2006-12-18,0.0,7.8,30.43,2.24,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2006,12,Dec,Winter
+1995-03-20,0.0,23.56,34.26,3.7,Haridwar (Haridwar),Haridwar,29.95,78.16,0,1995,3,Mar,Spring
+1997-03-24,0.51,5.48,35.52,2.88,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1997,3,Mar,Spring
+2019-12-17,0.0,8.02,45.88,2.01,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2019,12,Dec,Winter
+2013-01-31,0.0,-1.63,64.39,1.65,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2013,1,Jan,Winter
+2003-08-20,0.26,21.06,83.92,2.02,Champawat (Champawat),Champawat,29.34,80.09,0,2003,8,Aug,Monsoon
+2013-06-17,57.07,9.99,94.35,4.28,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2013,6,Jun,Monsoon
+2006-11-06,0.0,15.61,57.69,2.04,Champawat (Champawat),Champawat,29.34,80.09,0,2006,11,Nov,Autumn
+2011-11-21,0.0,13.65,70.75,1.63,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2011,11,Nov,Autumn
+2008-06-20,1.59,17.1,86.92,1.72,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2008,6,Jun,Monsoon
+2023-08-15,1.97,23.73,85.39,2.08,Almora (Almora),Almora,29.6,79.66,0,2023,8,Aug,Monsoon
+2018-08-05,39.74,18.3,94.95,2.45,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2018,8,Aug,Monsoon
+2025-07-24,5.98,24.32,89.64,2.25,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2025,7,Jul,Monsoon
+2026-03-27,127.28,1.87,85.8,1.54,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2026,3,Mar,Spring
+2022-09-23,101.2,10.93,87.32,1.82,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2022,9,Sep,Monsoon
+1997-01-19,0.67,-4.92,92.23,2.55,Joshimath (Chamoli),Chamoli,30.55,79.57,0,1997,1,Jan,Winter
+2017-08-25,13.36,18.17,84.5,1.65,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2017,8,Aug,Monsoon
+2022-01-12,0.75,7.99,79.06,1.25,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2022,1,Jan,Winter
+2019-10-15,0.0,18.35,68.43,1.94,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2019,10,Oct,Autumn
+2012-09-12,186.92391845520004,12.17,90.79,3.5,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2012,9,Sep,Monsoon
+2014-02-04,0.14,12.27,61.41,2.38,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2014,2,Feb,Winter
+2011-06-30,106.83,23.9,83.24,1.83,Nainital (Nainital),Nainital,29.38,79.45,1,2011,6,Jun,Monsoon
+2017-07-14,140.52012394879165,22.66,88.0,3.5,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2017,7,Jul,Monsoon
+2013-06-18,197.69530232726265,10.79,88.6,3.5,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
+2011-03-11,0.0,14.83,42.87,2.47,Nainital (Nainital),Nainital,29.38,79.45,0,2011,3,Mar,Spring
+2021-07-19,137.47666186877447,17.86,91.22,3.5,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2021,7,Jul,Monsoon
+2013-06-16,121.65,13.86,95.62,3.28,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2013,6,Jun,Monsoon
+2022-10-20,194.93532455682947,9.5,88.0,3.5,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2022,10,Oct,Autumn
+2001-02-21,0.05,-0.66,57.1,1.96,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2001,2,Feb,Winter
+2020-03-07,16.55,-3.44,97.19,2.75,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2020,3,Mar,Spring
+2000-06-06,6.86,7.37,70.9,3.17,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2000,6,Jun,Monsoon
+1990-03-03,0.0,4.43,56.84,1.84,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,1990,3,Mar,Spring
+2019-08-18,169.57190183039177,14.98,94.34,3.5,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2019,8,Aug,Monsoon
+1993-02-18,0.11,-0.86,44.42,2.7,Joshimath (Chamoli),Chamoli,30.55,79.57,0,1993,2,Feb,Winter
+2010-08-18,143.38659141179625,17.43,95.03,3.5,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2010,8,Aug,Monsoon
+2020-01-05,0.02,-13.05,64.16,1.87,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2020,1,Jan,Winter
+2012-03-31,0.0,21.92,28.97,3.29,Almora (Almora),Almora,29.6,79.66,0,2012,3,Mar,Spring
+2018-01-12,0.0,4.49,23.11,1.12,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2018,1,Jan,Winter
+2025-03-04,1.95,13.49,57.57,2.67,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2025,3,Mar,Spring
+2010-07-30,160.7,22.81,92.65,3.58,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,1,2010,7,Jul,Monsoon
+2002-08-11,125.11,23.36,94.0,2.71,Nainital (Nainital),Nainital,29.38,79.45,1,2002,8,Aug,Monsoon
+2017-04-10,0.0,19.11,27.62,4.08,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2017,4,Apr,Spring
+2010-01-06,0.0,8.58,46.98,1.93,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2010,1,Jan,Winter
+1991-08-04,119.81,23.48,83.89,2.25,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,1991,8,Aug,Monsoon
+1994-07-08,23.58,19.22,81.23,2.29,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,1994,7,Jul,Monsoon
+1998-08-19,151.43232428826536,12.87,88.0,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
+2016-10-06,0.8,10.45,72.6,2.07,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2016,10,Oct,Autumn
+2023-04-12,0.0,6.9,66.86,2.25,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2023,4,Apr,Spring
+1995-04-06,0.0,11.33,34.62,2.54,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,1995,4,Apr,Spring
+1990-05-01,0.11,23.0,23.02,3.5,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,1990,5,May,Spring
+2009-01-24,0.0,17.79,44.61,2.11,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2009,1,Jan,Winter
+2017-07-13,193.13168069969362,16.84,90.86,3.5,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2017,7,Jul,Monsoon
+2010-09-19,170.2629738184297,20.67,88.74,3.5,Almora (Almora),Almora,29.6,79.66,1,2010,9,Sep,Monsoon
+2025-08-04,163.0029092919337,10.21,88.0,3.5,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2025,8,Aug,Monsoon
+2022-10-09,126.75,17.97,91.67,3.17,Nainital (Nainital),Nainital,29.38,79.45,1,2022,10,Oct,Autumn
+2021-07-20,152.4245687901184,17.72,92.26,3.5,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2021,7,Jul,Monsoon
+2014-08-07,5.0,18.5,88.53,2.28,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2014,8,Aug,Monsoon
+2010-07-30,136.54,22.93,92.3,3.04,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2010,7,Jul,Monsoon
+2010-08-19,130.9996280421127,17.85,90.38,3.5,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2010,8,Aug,Monsoon
+2020-02-27,0.0,12.54,79.63,1.85,Almora (Almora),Almora,29.6,79.66,0,2020,2,Feb,Winter
+2020-04-21,344.76,15.45,74.32,1.7,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2020,4,Apr,Spring
+2026-04-16,0.0,24.87,25.23,1.78,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2026,4,Apr,Spring
+1993-04-06,0.0,3.68,36.14,2.63,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1993,4,Apr,Spring
+2021-02-07,166.96931885352194,-0.07,88.0,3.5,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2021,2,Feb,Winter
+2014-11-28,0.0,13.28,44.42,2.27,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2014,11,Nov,Autumn
+2009-12-21,0.0,4.1,27.43,1.68,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2009,12,Dec,Winter
+2012-06-07,0.0,11.92,52.99,3.61,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2012,6,Jun,Monsoon
+1991-06-19,126.71,22.51,61.98,1.73,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,1991,6,Jun,Monsoon
+2020-04-21,377.84,1.83,92.89,2.27,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2020,4,Apr,Spring
+2024-01-13,0.0,12.61,47.97,1.46,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2024,1,Jan,Winter
+2012-11-05,0.0,10.63,68.54,1.66,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2012,11,Nov,Autumn
+2013-06-25,134.33,23.6,91.52,1.93,Almora (Almora),Almora,29.6,79.66,1,2013,6,Jun,Monsoon
+2022-04-01,0.0,10.74,27.88,2.63,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2022,4,Apr,Spring
+2008-03-26,0.0,10.48,26.12,3.01,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2008,3,Mar,Spring
+2011-04-03,0.06,19.94,36.99,2.94,Almora (Almora),Almora,29.6,79.66,0,2011,4,Apr,Spring
+2015-08-10,1.8,18.1,92.83,2.16,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2015,8,Aug,Monsoon
+2021-02-24,0.0,3.5,39.56,2.82,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2021,2,Feb,Winter
+2010-07-30,139.78,18.97,94.2,2.9,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2010,7,Jul,Monsoon
+2004-08-24,11.71,12.11,84.11,1.67,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2004,8,Aug,Monsoon
+2013-06-16,159.16,17.04,94.89,3.52,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2013,6,Jun,Monsoon
+2016-09-06,0.61,22.14,84.95,2.37,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2016,9,Sep,Monsoon
+2020-05-03,276.17,11.27,79.87,2.72,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2020,5,May,Spring
+2012-08-15,120.64727694747617,23.43,89.9,3.5,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,2012,8,Aug,Monsoon
+2000-07-24,11.04,17.3,87.32,2.72,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2000,7,Jul,Monsoon
+2017-03-18,0.0,0.68,62.24,2.33,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2017,3,Mar,Spring
+1994-12-20,0.0,9.63,30.94,2.16,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,1994,12,Dec,Winter
+2016-11-06,0.0,3.64,50.41,2.06,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2016,11,Nov,Autumn
+1990-06-29,5.29,28.6,69.19,1.94,Haridwar (Haridwar),Haridwar,29.95,78.16,0,1990,6,Jun,Monsoon
+2011-05-25,7.48,13.94,47.43,2.92,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2011,5,May,Spring
+2022-10-09,101.68,15.66,92.52,2.82,Champawat (Champawat),Champawat,29.34,80.09,1,2022,10,Oct,Autumn
+2018-07-12,7.37,14.25,90.48,2.32,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2018,7,Jul,Monsoon
+2013-06-25,162.88,21.64,94.45,2.29,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2013,6,Jun,Monsoon
+2001-12-10,0.0,5.05,23.39,2.23,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2001,12,Dec,Winter
+2008-03-30,0.0,21.08,23.8,3.43,Almora (Almora),Almora,29.6,79.66,0,2008,3,Mar,Spring
+1990-09-08,135.34,25.65,89.92,2.41,Haridwar (Haridwar),Haridwar,29.95,78.16,1,1990,9,Sep,Monsoon
+1995-11-06,0.0,-3.37,65.4,2.03,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1995,11,Nov,Autumn
+2003-06-15,0.0,28.86,26.27,3.24,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2003,6,Jun,Monsoon
+1991-08-27,106.45,23.63,86.37,1.79,Almora (Almora),Almora,29.6,79.66,1,1991,8,Aug,Monsoon
+2024-07-12,2.99,25.33,79.58,2.51,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2024,7,Jul,Monsoon
+2017-03-24,0.0,-2.24,79.32,2.28,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2017,3,Mar,Spring
+2024-07-18,184.34469471875843,22.53,90.01,3.5,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2024,7,Jul,Monsoon
+1993-08-29,0.61,22.49,74.4,2.16,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,1993,8,Aug,Monsoon
+2020-02-27,0.0,11.34,79.07,1.78,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2020,2,Feb,Winter
+2002-04-18,0.0,23.45,22.87,3.49,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2002,4,Apr,Spring
+1991-08-05,34.79,18.13,89.85,1.88,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,1991,8,Aug,Monsoon
+1996-11-14,0.0,1.77,32.47,1.68,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1996,11,Nov,Autumn
+2011-06-07,0.87,18.46,67.71,2.64,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2011,6,Jun,Monsoon
+2016-07-14,13.6,24.77,86.73,1.52,Almora (Almora),Almora,29.6,79.66,0,2016,7,Jul,Monsoon
+2000-08-15,36.1,23.05,92.28,2.38,Nainital (Nainital),Nainital,29.38,79.45,0,2000,8,Aug,Monsoon
+2010-07-30,160.7,22.81,92.65,3.58,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,2010,7,Jul,Monsoon
+2025-06-28,26.81,29.75,68.0,1.9,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2025,6,Jun,Monsoon
+1992-12-24,0.0,9.36,33.22,2.05,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,1992,12,Dec,Winter
+1999-09-01,0.99,12.81,81.58,2.34,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1999,9,Sep,Monsoon
+2020-04-10,0.0,19.68,49.4,2.16,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2020,4,Apr,Spring
+2000-07-02,1.53,26.38,71.34,2.0,Nainital (Nainital),Nainital,29.38,79.45,0,2000,7,Jul,Monsoon
+1999-11-24,0.0,5.84,19.3,1.16,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1999,11,Nov,Autumn
+2021-05-05,6.12,13.89,66.27,2.38,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2021,5,May,Spring
+2012-08-04,45.17,23.1,88.84,1.92,Almora (Almora),Almora,29.6,79.66,0,2012,8,Aug,Monsoon
+1991-08-04,127.99,18.71,88.53,2.02,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,1991,8,Aug,Monsoon
+2025-02-09,0.0,0.99,47.5,2.08,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2025,2,Feb,Winter
+2013-06-15,106.75,22.62,81.71,1.99,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2013,6,Jun,Monsoon
+1991-07-30,3.47,15.19,84.66,2.82,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1991,7,Jul,Monsoon
+2005-04-11,0.0,16.93,27.73,2.86,Almora (Almora),Almora,29.6,79.66,0,2005,4,Apr,Spring
+2022-10-19,164.63548922698047,9.78,88.0,3.5,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2022,10,Oct,Autumn
+2023-11-22,0.0,10.73,45.0,2.23,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2023,11,Nov,Autumn
+1999-08-27,0.08,12.31,72.43,2.33,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1999,8,Aug,Monsoon
+1991-08-04,119.81,23.48,83.89,2.25,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,1,1991,8,Aug,Monsoon
+1992-09-19,0.39,12.53,68.3,2.21,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1992,9,Sep,Monsoon
+1997-04-06,3.22,-0.44,70.31,2.41,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1997,4,Apr,Spring
+2014-12-03,0.0,15.61,35.25,2.29,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2014,12,Dec,Winter
+2007-01-06,0.0,-4.49,32.27,2.62,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2007,1,Jan,Winter
+2022-11-01,0.0,15.65,65.37,2.36,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2022,11,Nov,Autumn
+2009-11-22,0.0,1.58,33.38,2.23,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2009,11,Nov,Autumn
+2010-08-03,4.74,22.75,84.37,2.41,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2010,8,Aug,Monsoon
+2020-05-03,254.31,18.41,79.94,2.04,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2020,5,May,Spring
+1993-11-28,0.0,13.32,36.06,2.03,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,1993,11,Nov,Autumn
+2010-09-20,180.1251062772247,21.98,88.0,3.5,Almora (Almora),Almora,29.6,79.66,1,2010,9,Sep,Monsoon
+2025-08-05,158.86670212309298,9.59,94.78,4.17,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2025,8,Aug,Monsoon
+2023-09-10,113.33,21.91,91.54,2.09,Nainital (Nainital),Nainital,29.38,79.45,1,2023,9,Sep,Monsoon
+2010-02-07,0.01,0.23,64.64,1.56,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2010,2,Feb,Winter
+2023-01-04,191.58843916738397,-3.12,88.0,3.5,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2023,1,Jan,Winter
+2023-01-22,0.0,4.12,52.52,2.16,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2023,1,Jan,Winter
+2021-10-18,108.17,17.1,87.69,2.14,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,2021,10,Oct,Autumn
+2021-10-18,105.45,6.66,89.44,0.91,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2021,10,Oct,Autumn
+2011-03-27,0.0,3.89,64.3,2.75,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2011,3,Mar,Spring
+2014-01-06,0.0,7.9,49.62,2.26,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2014,1,Jan,Winter
+1996-01-27,0.0,8.88,31.31,1.88,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,1996,1,Jan,Winter
+2015-10-25,1.04,9.47,65.27,1.9,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2015,10,Oct,Autumn
+1995-03-27,1.04,3.32,72.97,2.22,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,1995,3,Mar,Spring
+1999-08-15,0.13,22.79,67.77,2.46,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,1999,8,Aug,Monsoon
+2013-06-16,158.4,20.92,92.95,3.77,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2013,6,Jun,Monsoon
+1991-08-04,119.81,23.48,83.89,2.25,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,1,1991,8,Aug,Monsoon
+1992-02-04,0.0,-3.09,34.0,2.07,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1992,2,Feb,Winter
+2024-07-19,212.1254373184155,22.6,88.0,3.5,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2024,7,Jul,Monsoon
+2020-12-22,0.0,13.04,27.57,1.77,Champawat (Champawat),Champawat,29.34,80.09,0,2020,12,Dec,Winter
+2025-08-06,144.61017000976167,8.22,93.32,3.5,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,1,2025,8,Aug,Monsoon
+2008-09-20,122.74,18.07,94.69,4.72,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2008,9,Sep,Monsoon
+2002-08-11,101.24,21.54,94.24,2.83,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2002,8,Aug,Monsoon
+2018-11-17,0.0,12.6,57.08,1.94,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2018,11,Nov,Autumn
+2024-07-17,150.14568543377936,23.25,88.0,3.5,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2024,7,Jul,Monsoon
+1999-10-22,0.0,5.45,59.56,2.32,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1999,10,Oct,Autumn
+2024-11-30,0.0,13.13,57.3,1.64,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2024,11,Nov,Autumn
+1992-05-02,0.08,13.81,35.16,3.4,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1992,5,May,Spring
+2008-09-20,116.33,20.84,96.15,4.12,Nainital (Nainital),Nainital,29.38,79.45,1,2008,9,Sep,Monsoon
+2010-08-19,144.19936122244363,17.67,90.62,3.5,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2010,8,Aug,Monsoon
+2004-11-04,0.0,7.89,43.59,2.2,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2004,11,Nov,Autumn
+2020-02-22,7.94,-1.87,79.16,1.97,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2020,2,Feb,Winter
+2013-06-16,116.18,10.42,97.05,3.5,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
+2006-03-26,3.35,1.13,76.56,3.56,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2006,3,Mar,Spring
+2024-04-24,0.3,11.59,54.83,2.56,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2024,4,Apr,Spring
+2020-09-13,0.01,22.03,84.02,2.06,Champawat (Champawat),Champawat,29.34,80.09,0,2020,9,Sep,Monsoon
+2006-04-22,0.0,12.22,50.89,2.96,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2006,4,Apr,Spring
+1998-11-03,0.0,9.32,44.86,1.97,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1998,11,Nov,Autumn
+2020-05-27,1.74,12.07,55.22,2.31,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2020,5,May,Spring
+2013-06-16,116.18,10.42,97.05,3.5,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2013,6,Jun,Monsoon
+2013-06-16,168.7,25.3,90.64,3.83,Haridwar (Haridwar),Haridwar,29.95,78.16,1,2013,6,Jun,Monsoon
+2026-01-21,0.0,4.57,18.6,2.6,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2026,1,Jan,Winter
+1999-05-26,0.0,28.23,28.35,3.09,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,1999,5,May,Spring
+2010-08-16,126.88818995888712,21.63,88.0,3.5,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2010,8,Aug,Monsoon
+2012-06-28,0.0,14.41,52.36,2.65,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2012,6,Jun,Monsoon
+2001-06-29,5.79,24.19,75.61,2.16,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2001,6,Jun,Monsoon
+2018-08-07,215.7785557396947,21.36,88.34,3.5,Champawat (Champawat),Champawat,29.34,80.09,1,2018,8,Aug,Monsoon
+1992-06-24,2.84,34.71,22.91,2.84,Haridwar (Haridwar),Haridwar,29.95,78.16,0,1992,6,Jun,Monsoon
+1990-09-08,148.99,22.32,89.94,1.75,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,1990,9,Sep,Monsoon
+2013-06-15,113.1,17.68,87.36,1.69,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2013,6,Jun,Monsoon
+1992-01-20,0.0,9.85,43.01,1.97,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,1992,1,Jan,Winter
+2020-02-23,300.78,8.24,85.44,1.95,Champawat (Champawat),Champawat,29.34,80.09,1,2020,2,Feb,Winter
+1996-01-29,0.0,2.17,22.26,2.13,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1996,1,Jan,Winter
+2008-07-28,0.55,13.31,91.97,2.36,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2008,7,Jul,Monsoon
+2020-02-06,0.0,6.51,57.27,1.86,Champawat (Champawat),Champawat,29.34,80.09,0,2020,2,Feb,Winter
+2021-09-27,0.0,23.16,81.92,1.97,Nainital (Nainital),Nainital,29.38,79.45,0,2021,9,Sep,Monsoon
+2016-07-31,4.08,12.53,91.76,3.17,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2016,7,Jul,Monsoon
+2007-12-08,0.0,-2.09,54.27,2.15,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2007,12,Dec,Winter
+1998-08-17,163.12916761823934,13.89,88.24,3.5,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,1998,8,Aug,Monsoon
+1993-09-17,0.43,14.22,75.85,2.17,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1993,9,Sep,Monsoon
+1994-07-19,11.85,13.4,93.61,3.24,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,1994,7,Jul,Monsoon
+1991-06-07,1.68,29.67,44.91,2.49,Nainital (Nainital),Nainital,29.38,79.45,0,1991,6,Jun,Monsoon
+2020-04-21,344.76,15.45,74.32,1.7,Champawat (Champawat),Champawat,29.34,80.09,1,2020,4,Apr,Spring
+2014-10-07,0.63,3.19,85.93,2.1,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2014,10,Oct,Autumn
+2002-03-23,0.0,5.08,52.82,2.02,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2002,3,Mar,Spring
+1991-06-19,104.18,26.84,59.14,2.37,Haridwar (Haridwar),Haridwar,29.95,78.16,1,1991,6,Jun,Monsoon
+2006-07-16,3.19,22.12,89.13,1.31,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2006,7,Jul,Monsoon
+2013-12-30,0.2,3.17,37.79,2.13,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2013,12,Dec,Winter
+1994-06-05,0.06,30.43,16.31,3.86,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,1994,6,Jun,Monsoon
+2013-11-18,0.0,9.11,40.14,2.07,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2013,11,Nov,Autumn
+2010-08-15,129.6500679518572,22.4,88.73,3.5,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2010,8,Aug,Monsoon
+2021-10-18,108.17,17.1,87.69,2.14,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,1,2021,10,Oct,Autumn
+2013-06-18,134.43278077991428,10.79,88.6,3.5,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2013,6,Jun,Monsoon
+2007-09-17,0.0,12.53,84.51,1.9,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2007,9,Sep,Monsoon
+2013-06-25,134.33,23.6,91.52,1.93,Nainital (Nainital),Nainital,29.38,79.45,1,2013,6,Jun,Monsoon
+2022-08-20,219.6852795382259,11.45,92.01,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,8,Aug,Monsoon
+2008-09-20,116.33,20.84,96.15,4.12,Almora (Almora),Almora,29.6,79.66,1,2008,9,Sep,Monsoon
+2015-02-26,2.15,14.04,63.84,3.23,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2015,2,Feb,Winter
+2020-05-03,254.31,18.41,79.94,2.04,Champawat (Champawat),Champawat,29.34,80.09,1,2020,5,May,Spring
+2010-07-08,3.64,14.82,84.88,2.3,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2010,7,Jul,Monsoon
+1994-11-06,0.0,15.08,44.41,2.13,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,1994,11,Nov,Autumn
+2022-08-18,170.23859363951226,14.91,88.0,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,8,Aug,Monsoon
+1997-04-24,0.0,24.26,33.95,2.83,Almora (Almora),Almora,29.6,79.66,0,1997,4,Apr,Spring
+2023-07-10,110.93,22.65,94.61,2.57,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2023,7,Jul,Monsoon
+1996-06-23,5.42,14.26,82.86,3.12,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1996,6,Jun,Monsoon
+1999-08-10,1.9,13.31,89.71,2.21,Joshimath (Chamoli),Chamoli,30.55,79.57,0,1999,8,Aug,Monsoon
+2021-10-18,188.15,16.79,91.09,1.93,Champawat (Champawat),Champawat,29.34,80.09,1,2021,10,Oct,Autumn
+2004-06-18,105.57,23.43,85.09,1.71,Almora (Almora),Almora,29.6,79.66,1,2004,6,Jun,Monsoon
+2025-06-19,1.5,10.95,75.4,2.37,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2025,6,Jun,Monsoon
+2013-06-16,116.18,10.42,97.05,3.42,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2013,6,Jun,Monsoon
+2006-10-01,0.0,15.4,56.32,2.37,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2006,10,Oct,Autumn
+2008-12-12,0.0,-0.45,32.89,1.77,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2008,12,Dec,Winter
+2020-08-30,4.04,22.57,86.16,2.7,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2020,8,Aug,Monsoon
+2013-08-01,2.43,13.75,90.2,2.59,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2013,8,Aug,Monsoon
+2021-07-14,7.96,23.92,81.23,1.98,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2021,7,Jul,Monsoon
+2021-10-18,105.45,6.66,89.44,0.91,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2021,10,Oct,Autumn
+2004-06-18,105.57,23.43,85.09,1.71,Nainital (Nainital),Nainital,29.38,79.45,1,2004,6,Jun,Monsoon
+2020-02-23,318.07,-2.15,87.32,1.22,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2020,2,Feb,Winter
+2014-09-30,3.16,18.94,77.88,1.48,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2014,9,Sep,Monsoon
+2025-08-21,2.81,14.08,90.74,2.88,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2025,8,Aug,Monsoon
+1990-09-08,148.99,22.32,89.94,1.75,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,1,1990,9,Sep,Monsoon
+2024-03-13,0.27,9.2,59.04,2.03,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2024,3,Mar,Spring
+2006-12-06,0.33,0.74,70.13,1.68,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2006,12,Dec,Winter
+1993-07-07,0.03,15.63,79.65,2.88,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1993,7,Jul,Monsoon
+2023-09-10,113.33,21.91,91.54,2.09,Almora (Almora),Almora,29.6,79.66,1,2023,9,Sep,Monsoon
+2013-06-16,116.18,10.42,97.05,3.42,Karnaprayag (Chamoli),Chamoli,30.27,79.21,1,2013,6,Jun,Monsoon
+1994-09-04,0.15,12.39,94.13,2.4,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,1994,9,Sep,Monsoon
+2010-05-05,0.0,18.02,39.92,3.26,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2010,5,May,Spring
+2019-08-17,138.0459900249537,16.72,91.08,3.5,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,1,2019,8,Aug,Monsoon
+2001-12-30,0.0,4.76,31.08,1.74,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2001,12,Dec,Winter
+2016-11-24,0.0,11.08,20.78,2.29,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2016,11,Nov,Autumn
+2009-10-16,0.0,5.47,51.37,1.96,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2009,10,Oct,Autumn
+2023-07-22,11.42,14.36,92.91,3.24,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2023,7,Jul,Monsoon
+2020-11-03,0.0,18.32,44.09,2.12,Nainital (Nainital),Nainital,29.38,79.45,0,2020,11,Nov,Autumn
+2011-06-30,135.81,20.98,88.75,1.6,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2011,6,Jun,Monsoon
+1998-06-15,0.74,29.27,40.15,2.69,Almora (Almora),Almora,29.6,79.66,0,1998,6,Jun,Monsoon
+2020-08-14,6.66,18.92,88.58,1.76,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2020,8,Aug,Monsoon
+2021-02-08,118.10730065907555,2.3,88.0,3.5,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2021,2,Feb,Winter
+2023-09-21,0.0,12.19,81.33,1.92,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2023,9,Sep,Monsoon
+2002-08-11,101.24,21.54,94.24,2.83,Champawat (Champawat),Champawat,29.34,80.09,1,2002,8,Aug,Monsoon
+2023-01-03,186.72037751255468,-4.5,88.0,3.5,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2023,1,Jan,Winter
+2021-10-18,200.54,19.23,88.06,1.91,Nainital (Nainital),Nainital,29.38,79.45,1,2021,10,Oct,Autumn
+1996-04-12,0.0,10.69,37.84,2.92,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,1996,4,Apr,Spring
+2004-06-18,104.58,20.87,87.72,1.43,Champawat (Champawat),Champawat,29.34,80.09,1,2004,6,Jun,Monsoon
+1993-08-13,0.02,12.44,69.57,2.15,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1993,8,Aug,Monsoon
+2025-08-05,107.21,22.65,95.14,3.08,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,1,2025,8,Aug,Monsoon
+2004-02-28,0.0,17.4,40.01,2.97,Almora (Almora),Almora,29.6,79.66,0,2004,2,Feb,Winter
+2022-09-23,121.11,16.92,86.98,1.62,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2022,9,Sep,Monsoon
+1991-06-06,2.54,26.1,53.03,2.27,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,1991,6,Jun,Monsoon
+1997-11-20,0.0,5.43,57.73,1.98,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,1997,11,Nov,Autumn
+2006-03-02,0.0,15.53,22.09,2.28,Champawat (Champawat),Champawat,29.34,80.09,0,2006,3,Mar,Spring
+1998-10-06,0.0,20.73,74.15,1.81,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,1998,10,Oct,Autumn
+2020-08-29,0.56,8.56,84.12,2.57,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2020,8,Aug,Monsoon
+2026-04-21,0.46,7.68,52.56,1.37,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2026,4,Apr,Spring
+2020-10-29,0.0,16.18,47.44,2.21,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2020,10,Oct,Autumn
+2021-09-11,6.17,25.85,80.92,2.44,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2021,9,Sep,Monsoon
+1990-01-20,0.0,6.04,21.35,2.78,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,1990,1,Jan,Winter
+2016-01-26,0.0,2.15,52.87,1.59,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2016,1,Jan,Winter
+2013-06-25,162.88,21.64,94.45,2.29,Champawat (Champawat),Champawat,29.34,80.09,1,2013,6,Jun,Monsoon
+1995-06-25,0.2,24.97,53.79,2.64,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,1995,6,Jun,Monsoon
+2012-09-20,0.0,16.07,81.4,1.84,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2012,9,Sep,Monsoon
+1998-11-17,0.0,4.28,36.93,1.85,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1998,11,Nov,Autumn
+2017-01-04,0.0,-1.74,67.0,1.99,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2017,1,Jan,Winter
+2000-11-13,0.0,14.53,43.68,2.07,Champawat (Champawat),Champawat,29.34,80.09,0,2000,11,Nov,Autumn
+2010-07-30,127.5,22.67,93.77,3.57,Nainital (Nainital),Nainital,29.38,79.45,1,2010,7,Jul,Monsoon
+2013-06-16,175.39,21.91,90.83,3.38,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,2013,6,Jun,Monsoon
+2001-03-06,0.13,8.66,19.0,2.57,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2001,3,Mar,Spring
+2014-04-14,0.06,18.91,43.27,3.33,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2014,4,Apr,Spring
+2001-02-10,0.0,13.33,16.86,2.39,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2001,2,Feb,Winter
+2026-03-26,0.0,5.8,58.21,2.22,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2026,3,Mar,Spring
+2012-01-17,1.0,6.03,81.27,1.72,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2012,1,Jan,Winter
+2021-10-18,108.17,17.1,87.69,2.14,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,1,2021,10,Oct,Autumn
+2007-01-09,0.0,12.26,31.22,1.73,Almora (Almora),Almora,29.6,79.66,0,2007,1,Jan,Winter
+1999-07-09,0.63,10.79,75.38,2.49,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1999,7,Jul,Monsoon
+2025-08-05,107.21,22.65,95.14,3.08,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,2025,8,Aug,Monsoon
+2008-06-29,0.56,21.18,81.82,1.9,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2008,6,Jun,Monsoon
+2023-04-02,0.56,6.86,73.73,1.97,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2023,4,Apr,Spring
+2024-09-13,107.6,20.04,93.77,3.95,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2024,9,Sep,Monsoon
+2013-03-07,0.0,19.21,55.98,2.26,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2013,3,Mar,Spring
+2021-10-18,105.45,6.66,89.44,0.91,Karnaprayag (Chamoli),Chamoli,30.27,79.21,1,2021,10,Oct,Autumn
+2020-06-18,4.0,22.19,83.86,2.14,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2020,6,Jun,Monsoon
+2004-07-06,156.33472397426988,14.28,91.55,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2004,7,Jul,Monsoon
+2013-06-15,149.38229160542318,11.57,91.03,3.5,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
+2016-06-14,3.14,13.35,80.46,2.62,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2016,6,Jun,Monsoon
+2015-05-27,0.03,12.83,27.74,2.82,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2015,5,May,Spring
+1998-03-24,0.02,0.37,53.87,2.12,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1998,3,Mar,Spring
+2022-05-29,0.16,11.48,67.7,2.37,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2022,5,May,Spring
+2017-07-11,113.06776206646063,18.14,89.43,3.5,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2017,7,Jul,Monsoon
+2020-02-23,246.15,3.07,85.22,1.72,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2020,2,Feb,Winter
+2005-06-16,0.0,7.4,57.45,2.88,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2005,6,Jun,Monsoon
+2017-01-15,0.31,8.23,53.62,2.22,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2017,1,Jan,Winter
+2009-02-04,0.0,12.14,38.46,2.37,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2009,2,Feb,Winter
+2020-10-05,0.0,23.51,54.74,2.14,Almora (Almora),Almora,29.6,79.66,0,2020,10,Oct,Autumn
+1990-08-14,1.2,16.68,83.72,2.09,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,1990,8,Aug,Monsoon
+1994-12-28,0.06,15.9,39.25,3.26,Haridwar (Haridwar),Haridwar,29.95,78.16,0,1994,12,Dec,Winter
+2006-07-10,30.16,23.49,88.98,2.29,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2006,7,Jul,Monsoon
+2020-05-03,369.65,6.21,84.39,2.14,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,1,2020,5,May,Spring
+2009-08-13,154.45163075183697,23.44,88.98,3.5,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2009,8,Aug,Monsoon
+2010-07-30,162.12,27.43,87.63,2.76,Haridwar (Haridwar),Haridwar,29.95,78.16,1,2010,7,Jul,Monsoon
+2021-10-18,188.15,16.79,91.09,1.93,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2021,10,Oct,Autumn
+1995-11-24,0.0,12.05,32.33,2.05,Champawat (Champawat),Champawat,29.34,80.09,0,1995,11,Nov,Autumn
+1990-12-25,0.0,11.48,30.9,1.24,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,1990,12,Dec,Winter
+2020-04-21,287.54,7.9,84.75,2.03,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2020,4,Apr,Spring
+2012-05-27,0.0,12.98,39.07,2.55,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2012,5,May,Spring
+2021-02-05,1.64,5.96,72.75,1.94,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2021,2,Feb,Winter
+2016-02-12,0.0,3.85,45.12,2.27,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2016,2,Feb,Winter
+2019-05-08,0.0,31.78,16.12,4.94,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2019,5,May,Spring
+1991-08-04,110.76,23.19,82.31,2.32,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,1991,8,Aug,Monsoon
+2009-10-23,0.0,16.0,43.89,2.2,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2009,10,Oct,Autumn
+2020-05-03,276.17,11.27,79.87,2.72,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2020,5,May,Spring
+2021-04-24,0.34,8.49,54.77,1.68,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2021,4,Apr,Spring
+2001-10-10,0.0,14.37,54.46,2.19,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2001,10,Oct,Autumn
+2020-06-27,0.0,32.91,46.29,3.86,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2020,6,Jun,Monsoon
+2003-11-30,0.0,-3.41,27.5,1.75,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2003,11,Nov,Autumn
+2010-08-17,135.07486186966497,16.41,91.41,3.5,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2010,8,Aug,Monsoon
+2013-06-16,116.18,10.42,97.05,3.42,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2013,6,Jun,Monsoon
+1992-03-28,0.2,17.26,32.77,2.33,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,1992,3,Mar,Spring
+1993-04-01,0.0,15.58,32.33,2.51,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,1993,4,Apr,Spring
+2021-10-18,105.45,6.66,89.44,0.91,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2021,10,Oct,Autumn
+2003-08-12,180.94586516539624,18.36,89.12,3.5,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,1,2003,8,Aug,Monsoon
+1995-02-16,0.0,9.68,53.99,2.49,Champawat (Champawat),Champawat,29.34,80.09,0,1995,2,Feb,Winter
+2021-07-29,10.97,14.02,87.87,1.89,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2021,7,Jul,Monsoon
+1998-06-03,0.0,33.79,15.71,4.14,Haridwar (Haridwar),Haridwar,29.95,78.16,0,1998,6,Jun,Monsoon
+2009-09-16,0.0,21.01,75.97,1.89,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2009,9,Sep,Monsoon
+2013-06-17,140.52012394879165,9.99,94.35,4.28,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2013,6,Jun,Monsoon
+2020-04-28,1.22,5.94,87.11,1.64,Badrinath (Chamoli),Chamoli,30.74,79.49,0,2020,4,Apr,Spring
+2019-02-20,2.07,10.88,61.35,2.1,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2019,2,Feb,Winter
+1994-12-25,0.28,-3.16,66.54,1.66,Joshimath (Chamoli),Chamoli,30.55,79.57,0,1994,12,Dec,Winter
+2008-04-06,3.13,9.41,66.3,1.93,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2008,4,Apr,Spring
+2018-08-09,207.750708464474,22.19,91.09,3.5,Champawat (Champawat),Champawat,29.34,80.09,1,2018,8,Aug,Monsoon
+2002-08-11,125.11,23.36,94.0,2.71,Almora (Almora),Almora,29.6,79.66,1,2002,8,Aug,Monsoon
+2020-04-21,287.54,7.9,84.75,2.03,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2020,4,Apr,Spring
+2017-08-31,33.15,22.69,91.14,2.15,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2017,8,Aug,Monsoon
+2007-10-19,0.0,5.61,73.45,1.79,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2007,10,Oct,Autumn
+2011-02-23,0.0,-0.76,55.28,2.24,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2011,2,Feb,Winter
+2024-11-02,0.0,13.7,59.28,1.95,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,0,2024,11,Nov,Autumn
+2017-07-12,145.962272253833,16.93,90.92,3.5,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2017,7,Jul,Monsoon
+2007-12-26,0.0,14.61,35.01,2.09,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2007,12,Dec,Winter
+2022-09-23,101.2,10.93,87.32,1.82,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,9,Sep,Monsoon
+1999-06-19,0.07,26.9,60.23,2.33,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,1999,6,Jun,Monsoon
+2023-01-05,122.03959339788933,-1.55,88.0,3.5,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2023,1,Jan,Winter
+2015-09-25,0.0,15.58,71.2,2.1,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2015,9,Sep,Monsoon
+2024-11-22,0.0,-3.28,44.22,2.18,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2024,11,Nov,Autumn
+1995-11-13,0.0,16.33,43.57,2.38,Nainital (Nainital),Nainital,29.38,79.45,0,1995,11,Nov,Autumn
+2008-09-20,122.74,18.07,94.69,4.72,Champawat (Champawat),Champawat,29.34,80.09,1,2008,9,Sep,Monsoon
+2021-10-18,105.45,6.66,89.44,0.91,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2021,10,Oct,Autumn
+2004-11-06,0.0,7.64,42.92,1.91,Arakot (Uttarkashi),Uttarkashi,30.88,78.2,0,2004,11,Nov,Autumn
+2023-07-14,4.89,22.6,89.13,1.76,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,2023,7,Jul,Monsoon
+2012-08-14,130.03596548564005,23.18,88.0,3.5,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,1,2012,8,Aug,Monsoon
+2024-09-13,107.6,20.04,93.77,3.95,Champawat (Champawat),Champawat,29.34,80.09,1,2024,9,Sep,Monsoon
+2020-04-12,0.0,22.28,49.05,2.6,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2020,4,Apr,Spring
+2025-09-22,0.0,17.97,85.21,1.92,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2025,9,Sep,Monsoon
+2025-10-07,19.36,10.36,83.11,2.24,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2025,10,Oct,Autumn
+2025-05-08,4.17,9.63,76.49,2.37,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2025,5,May,Spring
+2009-08-24,14.91,23.41,77.76,1.73,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2009,8,Aug,Monsoon
+2017-01-17,0.0,-3.83,64.09,2.43,Malpa (Pithoragarh),Pithoragarh,30.23,80.72,0,2017,1,Jan,Winter
+2009-04-24,0.0,23.01,17.46,3.62,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2009,4,Apr,Spring
+2018-08-08,171.65620602458347,22.35,88.0,3.5,Champawat (Champawat),Champawat,29.34,80.09,1,2018,8,Aug,Monsoon
+2012-09-14,154.45163075183697,10.81,98.55,3.61,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,1,2012,9,Sep,Monsoon
+2009-08-14,11.34,13.49,95.51,1.45,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2009,8,Aug,Monsoon
+2004-07-05,211.97151671559703,13.87,91.6,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2004,7,Jul,Monsoon
+2018-09-17,0.02,21.09,79.45,1.9,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2018,9,Sep,Monsoon
+2013-06-17,112.63385976171195,9.99,94.35,4.28,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,1,2013,6,Jun,Monsoon
+2007-10-02,0.0,1.4,50.04,2.36,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2007,10,Oct,Autumn
+2008-07-02,14.76,13.86,89.72,2.73,Kedarnath (Rudraprayag),Rudraprayag,30.735,79.066,0,2008,7,Jul,Monsoon
+2010-07-30,160.7,22.81,92.65,3.58,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,1,2010,7,Jul,Monsoon
+2003-11-23,0.0,9.76,29.96,1.47,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2003,11,Nov,Autumn
+2020-09-18,0.0,14.16,72.78,2.07,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2020,9,Sep,Monsoon
+1995-09-25,0.0,19.98,65.74,2.12,Mussoorie (Dehradun),Dehradun,30.45,78.07,0,1995,9,Sep,Monsoon
+2011-06-30,106.83,23.9,83.24,1.83,Almora (Almora),Almora,29.6,79.66,1,2011,6,Jun,Monsoon
+2010-02-10,0.17,9.71,63.74,2.24,Champawat (Champawat),Champawat,29.34,80.09,0,2010,2,Feb,Winter
+2006-11-28,0.0,-0.76,33.04,1.58,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2006,11,Nov,Autumn
+1992-02-14,0.0,11.75,51.15,3.03,Almora (Almora),Almora,29.6,79.66,0,1992,2,Feb,Winter
+2021-10-18,200.54,19.23,88.06,1.91,Almora (Almora),Almora,29.6,79.66,1,2021,10,Oct,Autumn
+2010-03-10,0.0,21.48,28.96,2.58,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2010,3,Mar,Spring
+2008-01-31,0.0,-15.27,61.34,2.24,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2008,1,Jan,Winter
+2011-03-22,0.0,11.23,29.43,2.66,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2011,3,Mar,Spring
+2021-08-21,23.32,17.41,91.92,1.28,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2021,8,Aug,Monsoon
+2017-02-17,0.0,16.85,51.08,2.16,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2017,2,Feb,Winter
+2022-08-19,155.93307383944307,13.83,93.78,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2022,8,Aug,Monsoon
+2000-09-25,0.14,20.93,65.85,2.31,Nainital (Nainital),Nainital,29.38,79.45,0,2000,9,Sep,Monsoon
+1990-09-08,148.99,22.32,89.94,1.75,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,1,1990,9,Sep,Monsoon
+2004-02-11,0.0,3.89,44.49,2.74,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,0,2004,2,Feb,Winter
+2010-08-14,185.49267313946694,21.74,88.0,3.5,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,1,2010,8,Aug,Monsoon
+2020-02-03,0.0,11.52,48.82,1.77,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2020,2,Feb,Winter
+2017-10-03,0.0,10.98,58.4,2.11,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2017,10,Oct,Autumn
+2025-08-08,7.09,14.11,93.19,2.73,Karnaprayag (Chamoli),Chamoli,30.27,79.21,0,2025,8,Aug,Monsoon
+1991-03-07,1.6,10.56,29.41,2.29,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,1991,3,Mar,Spring
+2013-06-22,7.0,23.68,75.77,1.68,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2013,6,Jun,Monsoon
+1992-09-14,6.14,19.15,89.36,1.72,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,1992,9,Sep,Monsoon
+2007-10-20,0.0,19.92,65.93,2.12,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2007,10,Oct,Autumn
+2017-12-21,0.0,15.05,43.78,1.89,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2017,12,Dec,Winter
+2013-05-03,0.0,25.13,21.62,3.41,Almora (Almora),Almora,29.6,79.66,0,2013,5,May,Spring
+1991-06-19,126.71,22.51,61.98,1.73,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,1,1991,6,Jun,Monsoon
+2005-03-17,0.0,21.19,53.84,2.61,Nainital (Nainital),Nainital,29.38,79.45,0,2005,3,Mar,Spring
+2020-08-29,1.89,13.29,91.33,2.34,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2020,8,Aug,Monsoon
+2021-10-18,137.4,11.28,91.11,1.91,Bageshwar (Bageshwar),Bageshwar,29.83,79.77,1,2021,10,Oct,Autumn
+1997-06-15,0.0,13.51,60.32,2.66,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1997,6,Jun,Monsoon
+1992-09-18,0.02,3.21,74.34,2.36,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1992,9,Sep,Monsoon
+2003-07-05,40.88,23.15,82.34,3.5,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2003,7,Jul,Monsoon
+2011-12-24,0.0,-8.54,40.84,1.5,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2011,12,Dec,Winter
+2022-09-01,3.31,23.44,88.83,2.56,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2022,9,Sep,Monsoon
+2002-05-28,14.56,25.31,43.02,2.18,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,0,2002,5,May,Spring
+2021-07-18,169.5846243796068,19.38,89.78,3.5,Munsiyari (Pithoragarh),Pithoragarh,30.07,80.24,1,2021,7,Jul,Monsoon
+2020-08-18,14.64,23.46,94.82,3.59,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2020,8,Aug,Monsoon
+2022-10-09,126.75,17.97,91.67,3.17,Almora (Almora),Almora,29.6,79.66,1,2022,10,Oct,Autumn
+2003-03-16,0.0,16.17,45.06,2.41,Champawat (Champawat),Champawat,29.34,80.09,0,2003,3,Mar,Spring
+2022-09-23,101.2,10.93,87.32,1.82,Joshimath (Chamoli),Chamoli,30.55,79.57,1,2022,9,Sep,Monsoon
+2018-04-03,0.05,15.08,48.46,2.54,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2018,4,Apr,Spring
+2004-07-07,197.25549829273527,14.24,88.04,3.5,Badrinath (Chamoli),Chamoli,30.74,79.49,1,2004,7,Jul,Monsoon
+2005-11-09,0.0,14.37,43.72,1.83,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2005,11,Nov,Autumn
+2013-06-16,175.39,21.91,90.83,3.38,Srinagar (Pauri Garhwal),Pauri Garhwal,30.22,78.77,1,2013,6,Jun,Monsoon
+2016-04-21,0.0,25.3,24.12,4.61,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,0,2016,4,Apr,Spring
+1991-05-19,0.0,5.3,65.84,2.98,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,1991,5,May,Spring
+1990-09-18,1.86,12.14,86.52,2.34,Badrinath (Chamoli),Chamoli,30.74,79.49,0,1990,9,Sep,Monsoon
+2013-06-16,175.39,21.91,90.83,3.38,Devprayag (Tehri Garhwal),Tehri Garhwal,30.15,78.6,1,2013,6,Jun,Monsoon
+2009-08-11,186.92391845520004,23.76,88.0,3.5,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2009,8,Aug,Monsoon
+2002-02-06,0.44,-9.83,92.0,4.38,Dharali (Uttarkashi),Uttarkashi,31.04,78.73,0,2002,2,Feb,Winter
+2011-08-08,0.67,18.37,90.02,2.44,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,2011,8,Aug,Monsoon
+1994-07-06,9.61,19.07,89.39,2.44,Tehri (Tehri Garhwal),Tehri Garhwal,30.38,78.49,0,1994,7,Jul,Monsoon
+2004-02-09,0.09,11.63,49.06,2.24,Pauri (Pauri Garhwal),Pauri Garhwal,30.15,78.78,0,2004,2,Feb,Winter
+2012-09-25,0.0,23.56,70.33,2.11,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2012,9,Sep,Monsoon
+2013-02-11,0.0,12.23,50.46,2.04,Pithoragarh Town (Pithoragarh),Pithoragarh,29.58,80.22,0,2013,2,Feb,Winter
+2020-05-15,0.0,9.25,51.85,2.38,Joshimath (Chamoli),Chamoli,30.55,79.57,0,2020,5,May,Spring
+2022-01-17,0.0,-0.49,50.9,1.49,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,2022,1,Jan,Winter
+2002-10-27,0.0,20.75,43.29,2.67,Haridwar (Haridwar),Haridwar,29.95,78.16,0,2002,10,Oct,Autumn
+1998-02-03,0.0,-3.68,67.18,1.81,Mandakini Valley (Rudraprayag),Rudraprayag,30.45,79.2,0,1998,2,Feb,Winter
+2017-07-16,151.52464337976988,23.31,88.0,3.5,Mussoorie (Dehradun),Dehradun,30.45,78.07,1,2017,7,Jul,Monsoon
