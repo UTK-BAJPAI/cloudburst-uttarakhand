@@ -177,21 +177,64 @@ with hcol:
         st.write("No historical data available.")
 
 
-# ===== LIVE MONITOR SECTION =====
+# ===== LIVE MONITOR SECTION (cloud-friendly inline fetch) =====
+import requests as _rq
+
+LIVE_SITES = [
+    ("Arakot (Uttarkashi)",            "Uttarkashi",  30.88,  78.20),
+    ("Badrinath (Chamoli)",            "Chamoli",     30.74,  79.49),
+    ("Dharali (Uttarkashi)",           "Uttarkashi",  31.04,  78.73),
+    ("Kedarnath (Rudraprayag)",        "Rudraprayag", 30.735, 79.066),
+    ("Malpa (Pithoragarh)",            "Pithoragarh", 30.23,  80.72),
+    ("Mandakini Valley (Rudraprayag)", "Rudraprayag", 30.45,  79.20),
+]
+
+
+@st.cache_data(ttl=3600, show_spinner="Fetching live weather...")
+def _fetch_live(model_id):
+    url = "https://api.open-meteo.com/v1/forecast"
+    rows = []
+    now = datetime.now()
+    for name, district, lat, lon in LIVE_SITES:
+        try:
+            r = _rq.get(url, params={
+                "latitude": lat, "longitude": lon,
+                "current": "temperature_2m,relative_humidity_2m,precipitation,wind_speed_10m",
+                "daily": "precipitation_sum",
+                "wind_speed_unit": "ms",
+                "timezone": "Asia/Kolkata",
+                "forecast_days": 1,
+            }, timeout=20).json()
+            cur = r["current"]
+            rain = float((r.get("daily", {}).get("precipitation_sum") or [0])[0] or 0)
+            res = predict_cloudburst(
+                rain, cur["temperature_2m"], cur["relative_humidity_2m"],
+                cur["wind_speed_10m"], month=now.month,
+                model=model, scaler=scaler, metadata=metadata)
+            rows.append({
+                "Location": name, "District": district,
+                "Rain (mm)": rain, "Temp (C)": cur["temperature_2m"],
+                "Humidity (%)": cur["relative_humidity_2m"],
+                "Probability": res["probability"], "Risk_Level": res["risk_level"],
+            })
+        except Exception:
+            continue
+    return pd.DataFrame(rows), now
+
+
 st.divider()
 st.subheader(":satellite: Live Real-Time Monitor")
-live_path = DATA_DIR / "live_predictions.csv"
-if live_path.exists():
-    live = pd.read_csv(live_path, parse_dates=["Timestamp"])
-    latest = live.sort_values("Timestamp").groupby("Location").tail(1)
+latest, fetched_at = _fetch_live(id(model))
 
+if latest.empty:
+    st.warning("Could not fetch live data. Try refresh.")
+else:
     high = latest[latest["Risk_Level"] == "High"]
     medium = latest[latest["Risk_Level"] == "Medium"]
-
     c1, c2, c3 = st.columns(3)
     c1.metric("HIGH risk sites", len(high))
     c2.metric("MEDIUM risk sites", len(medium))
-    c3.metric("Last update", latest["Timestamp"].max().strftime("%H:%M, %d %b"))
+    c3.metric("Last fetched", fetched_at.strftime("%H:%M, %d %b"))
 
     if not high.empty:
         st.error(f":rotating_light: {len(high)} HIGH-risk site(s) right now!")
@@ -200,15 +243,8 @@ if live_path.exists():
     else:
         st.success(":white_check_mark: All sites Low risk - normal conditions")
 
-    st.dataframe(
-        latest[["Location", "District", "PRECTOT", "T2M", "RH2M",
-                "Probability", "Risk_Level"]]
-            .rename(columns={"PRECTOT": "Rain (mm)", "T2M": "Temp (C)",
-                             "RH2M": "Humidity (%)"}),
-        use_container_width=True, hide_index=True,
-    )
+    st.dataframe(latest, use_container_width=True, hide_index=True)
 
     if st.button(":arrows_counterclockwise: Refresh now"):
+        st.cache_data.clear()
         st.rerun()
-else:
-    st.info("Run `python live_predict.py` once to populate live data.")
