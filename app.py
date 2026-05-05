@@ -42,6 +42,40 @@ st.markdown(
 )
 
 
+
+# ===== INTERNATIONALISATION =====
+TRANSLATIONS = {
+    "English": {
+        "title": "Cloudburst Risk Prediction - Uttarakhand",
+        "caption": "Real-time risk monitoring for Himalayan hotspots, trained on NASA POWER data, live-fed by Open-Meteo.",
+        "context": "Context", "location": "Location", "month": "Month of year",
+        "met_inputs": "Meteorological Inputs", "risk_assess": "Risk Assessment",
+        "rainfall": "Rainfall (mm/day)", "temp": "Temperature (°C)",
+        "humidity": "Relative Humidity (%)", "wind": "Wind Speed (m/s)",
+        "predict_btn": "Predict Cloudburst Risk",
+        "feat_imp": "Feature Importance", "recent": "Recent predictions (this session)",
+        "live_title": "Live Real-Time Monitor — All 20 Uttarakhand Sites",
+        "map_title": "Risk Map of Uttarakhand", "detail": "Site-wise Detail",
+        "refresh": "Refresh now",
+    },
+    "हिंदी": {
+        "title": "बादल फटने का पूर्वानुमान - उत्तराखंड",
+        "caption": "हिमालयी क्षेत्रों के लिए वास्तविक समय बादल फटने का जोखिम मॉनिटरिंग। NASA POWER डेटा पर प्रशिक्षित Random Forest मॉडल। Open-Meteo से लाइव डेटा।",
+        "context": "संदर्भ", "location": "स्थान", "month": "वर्ष का महीना",
+        "met_inputs": "मौसम संबंधी इनपुट", "risk_assess": "जोखिम मूल्यांकन",
+        "rainfall": "वर्षा (मिमी/दिन)", "temp": "तापमान (°C)",
+        "humidity": "सापेक्ष आर्द्रता (%)", "wind": "हवा की गति (मी/से)",
+        "predict_btn": "जोखिम जानें",
+        "feat_imp": "फ़ीचर महत्व", "recent": "हाल की भविष्यवाणियां (इस सत्र में)",
+        "live_title": "लाइव मॉनिटर — सभी 20 उत्तराखंड स्थल",
+        "map_title": "उत्तराखंड का जोखिम मानचित्र", "detail": "स्थल-वार विवरण",
+        "refresh": "अभी रिफ्रेश करें",
+    },
+}
+_lang = st.sidebar.selectbox("🌐 Language / भाषा", ["English", "हिंदी"], index=0)
+T = TRANSLATIONS[_lang]
+
+
 @st.cache_resource(show_spinner=False)
 def load_artefacts():
     with open(MODEL_DIR / "model.pkl", "rb") as f:
@@ -90,9 +124,8 @@ def predict_cloudburst(rain, temp, humidity, wind, month=7, prev_temp=None,
 
 
 # ---------- UI ----------
-st.title(":cloud_with_lightning_and_rain: Cloudburst Risk Prediction - Uttarakhand")
-st.caption("Real-time cloudburst risk monitoring for Himalayan hotspots, "
-           "powered by a Random Forest trained on NASA POWER data and live-fed by Open-Meteo.")
+st.title(":cloud_with_lightning_and_rain: " + T["title"])
+st.caption(T["caption"])
 
 try:
     model, scaler, metadata = load_artefacts()
@@ -103,11 +136,11 @@ except FileNotFoundError:
 dataset = load_dataset()
 
 with st.sidebar:
-    st.header("Context")
+    st.header(T["context"])
     locations = sorted(dataset["Location"].unique()) if not dataset.empty else \
         ["Kedarnath (Rudraprayag)"]
-    location = st.selectbox("Location", locations, index=0)
-    month = st.slider("Month of year", 1, 12, datetime.now().month)
+    location = st.selectbox(T["location"], locations, index=0)
+    month = st.slider(T["month"], 1, 12, datetime.now().month)
     st.divider()
     st.markdown(f"**Operational threshold:** `{metadata['tuned_threshold']:.3f}`")
     st.markdown(f"**Test ROC-AUC:** `{metadata['metrics']['roc_auc']:.3f}`")
@@ -115,15 +148,15 @@ with st.sidebar:
 
 left, right = st.columns([1, 1], gap="large")
 with left:
-    st.subheader("Meteorological Inputs")
-    rain = st.slider("Rainfall (mm/day)", 0.0, 350.0, 25.0, 1.0)
-    temp = st.slider("Temperature (degC)", -10.0, 45.0, 22.0, 0.5)
-    humidity = st.slider("Relative Humidity (%)", 0.0, 100.0, 75.0, 1.0)
-    wind = st.slider("Wind Speed (m/s)", 0.0, 25.0, 3.0, 0.1)
-    predict_btn = st.button("Predict Cloudburst Risk", use_container_width=True)
+    st.subheader(T["met_inputs"])
+    rain = st.slider(T["rainfall"], 0.0, 350.0, 25.0, 1.0)
+    temp = st.slider(T["temp"], -10.0, 45.0, 22.0, 0.5)
+    humidity = st.slider(T["humidity"], 0.0, 100.0, 75.0, 1.0)
+    wind = st.slider(T["wind"], 0.0, 25.0, 3.0, 0.1)
+    predict_btn = st.button(T["predict_btn"], use_container_width=True)
 
 with right:
-    st.subheader("Risk Assessment")
+    st.subheader(T["risk_assess"])
     if predict_btn:
         result = predict_cloudburst(rain, temp, humidity, wind, month=month,
                                     model=model, scaler=scaler, metadata=metadata)
@@ -155,14 +188,14 @@ with right:
         st.info("Move the sliders and click **Predict Cloudburst Risk** to score the snapshot.")
 
 if st.session_state.get("history"):
-    st.subheader("Recent predictions (this session)")
+    st.subheader(T["recent"])
     st.dataframe(pd.DataFrame(st.session_state.history),
                  use_container_width=True, hide_index=True)
 
 st.divider()
 fcol, hcol = st.columns([1, 1], gap="large")
 with fcol:
-    st.subheader("Feature Importance")
+    st.subheader(T["feat_imp"])
     fi = pd.DataFrame(metadata["feature_importance"].items(),
                       columns=["Feature", "Importance"]).sort_values("Importance")
     st.bar_chart(fi.set_index("Feature"))
@@ -249,7 +282,7 @@ def _fetch_live(model_id):
 
 
 st.divider()
-st.subheader(":satellite: Live Real-Time Monitor — All 20 Uttarakhand Sites")
+st.subheader(":satellite: " + T["live_title"])
 latest, fetched_at = _fetch_live(id(model))
 
 if latest.empty:
@@ -273,7 +306,7 @@ else:
         st.success(f"✓ All {len(latest)} sites Low risk — normal conditions")
 
     # ----- Interactive risk map -----
-    st.markdown("##### 🗺️ Risk Map of Uttarakhand")
+    st.markdown("##### 🗺️ " + T["map_title"])
     map_df = latest.copy()
     map_df["color"] = map_df["Risk_Level"].apply(_risk_color)
     map_df["radius"] = (map_df["Probability"] * 6000 + 3500).astype(int)
@@ -307,13 +340,13 @@ else:
     st.caption(f"🟢 Low  •  🟡 Medium  •  🔴 High   |   Last fetched: "
                f"{fetched_at.strftime('%H:%M, %d %b %Y')}   |   Source: Open-Meteo")
 
-    st.markdown("##### 📊 Site-wise Detail")
+    st.markdown("##### 📊 " + T["detail"])
     st.dataframe(
         latest[["Location", "District", "Rain (mm)", "Temp (C)",
                 "Humidity (%)", "Probability", "Risk_Level"]],
         use_container_width=True, hide_index=True,
     )
 
-    if st.button("🔄 Refresh now"):
+    if st.button("🔄 " + T["refresh"]):
         st.cache_data.clear()
         st.rerun()
