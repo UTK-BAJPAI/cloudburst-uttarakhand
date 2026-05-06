@@ -1,6 +1,6 @@
 # 🌧️ Cloudburst Risk Prediction System — Uttarakhand
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit_Cloud-FF4B4B?style=for-the-badge)](https://cloudburst-uttarakhand-otm4ehmgtwfpmsrgunzaym.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit_Cloud-FF4B4B?style=for-the-badge)](https://cloudburst-uttarakhand-b2xeqpso8fhxzs8kkjpp2n.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat&logo=python)](https://python.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-orange?style=flat&logo=scikit-learn)](https://scikit-learn.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-red?style=flat&logo=streamlit)](https://streamlit.io)
@@ -10,7 +10,7 @@
 
 > A production-grade machine-learning system that predicts day-ahead cloudburst risk for **20 Himalayan hotspots across all 13 districts of Uttarakhand, India**. Trained on 36 years of NASA POWER meteorological data and validated against 6 famous historical disasters including Kedarnath 2013.
 
-**🔗 Live Demo:** https://cloudburst-uttarakhand-otm4ehmgtwfpmsrgunzaym.streamlit.app/  
+**🔗 Live Demo:** https://cloudburst-uttarakhand-b2xeqpso8fhxzs8kkjpp2n.streamlit.app/  
 **📦 Repository:** https://github.com/UTK-BAJPAI/cloudburst-uttarakhand
 
 ---
