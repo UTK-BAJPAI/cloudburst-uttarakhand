@@ -96,24 +96,27 @@ def load_dataset():
 
 def predict_cloudburst(rain, temp, humidity, wind, month=7, prev_temp=None,
                        model=None, scaler=None, metadata=None):
+    """Score current conditions; uses today as proxy for missing lag features."""
     if model is None:
         model, scaler, metadata = load_artefacts()
-    if rain <= 2.5: intensity = 0
-    elif rain <= 7.5: intensity = 1
-    elif rain <= 35.5: intensity = 2
-    elif rain <= 64.5: intensity = 3
-    elif rain <= 100: intensity = 4
-    else: intensity = 5
+
+    rain_intensity = (5 if rain > 100 else 4 if rain > 64.5 else 3 if rain > 35.5
+                      else 2 if rain > 7.5 else 1 if rain > 2.5 else 0)
+
     feats = {
-        "PRECTOT": rain, "T2M": temp, "RH2M": humidity, "WS2M": wind,
-        "Rainfall_Intensity": intensity,
-        "Humidity_Rainfall": rain * humidity,
+        "T2M": temp, "RH2M": humidity, "WS2M": wind, "PRECTOT": rain,
+        "T2M_lag1": prev_temp if prev_temp is not None else temp,
+        "RH2M_lag1": humidity, "WS2M_lag1": wind, "PRECTOT_lag1": rain,
+        "PRECTOT_3d_mean": rain, "RH2M_3d_mean": humidity, "T2M_3d_mean": temp,
         "Temperature_Change": 0.0 if prev_temp is None else (temp - prev_temp),
+        "Humidity_Change": 0.0,
+        "Rainfall_Intensity": rain_intensity,
+        "Humidity_Rainfall": rain * humidity,
         "Heat_Index": temp + 0.05 * humidity - 0.10 * wind,
         "Month_sin": float(np.sin(2 * np.pi * month / 12)),
         "Month_cos": float(np.cos(2 * np.pi * month / 12)),
     }
-    X = np.array([[feats[c] for c in metadata["feature_cols"]]], dtype=float)
+    X = np.array([[feats.get(c, 0.0) for c in metadata["feature_cols"]]], dtype=float)
     X = scaler.transform(X)
     proba = float(model.predict_proba(X)[0, 1])
     thr = metadata["tuned_threshold"]
@@ -121,8 +124,6 @@ def predict_cloudburst(rain, temp, humidity, wind, month=7, prev_temp=None,
     elif proba >= 0.30: level = "Medium"
     else: level = "Low"
     return {"risk_level": level, "probability": proba, "threshold": thr}
-
-
 # ---------- UI ----------
 st.title(":cloud_with_lightning_and_rain: " + T["title"])
 st.caption(T["caption"])
