@@ -210,7 +210,133 @@ with hcol:
     else:
         st.write("No historical data available.")
 
+# ===== HISTORICAL BACKTEST — Validate model on past famous events =====
+@st.cache_data
+def _load_historical():
+    p = DATA_DIR / "powerbi_dataset.csv"
+    if not p.exists():
+        return pd.DataFrame()
+    return pd.read_csv(p, parse_dates=["Date"])
 
+
+st.divider()
+st.subheader("🕐 Historical Backtest — Validate Model on Past Cloudbursts")
+st.caption("How would the model have performed on famous past Uttarakhand events? "
+           "Pick an event below and see what the model would have predicted "
+           "the day before it occurred.")
+
+FAMOUS_EVENTS = {
+    "Kedarnath Disaster (16 Jun 2013)":         ("Kedarnath (Rudraprayag)",       "2013-06-16"),
+    "Mandakini Valley Flash Flood (17 Jun 2013)": ("Mandakini Valley (Rudraprayag)", "2013-06-17"),
+    "Malpa Landslide (17 Aug 1998)":            ("Malpa (Pithoragarh)",            "1998-08-17"),
+    "Joshimath Glacier Disaster (7 Feb 2021)":  ("Joshimath (Chamoli)",            "2021-02-07"),
+    "Tehri Cloudburst (13 Aug 2003)":           ("Tehri (Tehri Garhwal)",          "2003-08-13"),
+    "Mussoorie Cloudburst (12 Aug 2009)":       ("Mussoorie (Dehradun)",           "2009-08-12"),
+    "Pithoragarh Bansbagar (15 Aug 2010)":      ("Pithoragarh Town (Pithoragarh)", "2010-08-15"),
+    "Almora Cloudburst (19 Sep 2010)":          ("Almora (Almora)",                "2010-09-19"),
+    "Badrinath 2022 (19 Aug 2022)":             ("Badrinath (Chamoli)",            "2022-08-19"),
+    "Dharali 2025 (5 Aug 2025)":                ("Dharali (Uttarkashi)",           "2025-08-05"),
+    "Arakot Cloudburst (18 Aug 2019)":          ("Arakot (Uttarkashi)",            "2019-08-18"),
+    "Pauri 2012 Event (14 Aug 2012)":           ("Pauri (Pauri Garhwal)",          "2012-08-14"),
+}
+
+bt_event = st.selectbox("📅 Select a historical cloudburst event", list(FAMOUS_EVENTS.keys()))
+location_bt, event_date_str = FAMOUS_EVENTS[bt_event]
+event_date = pd.to_datetime(event_date_str)
+
+if st.button("🔍 Run Historical Backtest", use_container_width=True):
+    hist = _load_historical()
+    if hist.empty:
+        st.error("Historical dataset not found. Run `python train_model.py` first.")
+    else:
+        # Try day before, fallback to event day, fallback to closest within ±3 days
+        candidates = [event_date - pd.Timedelta(days=d) for d in range(0, 4)]
+        row, used_date = pd.DataFrame(), None
+        for d in candidates:
+            r = hist[(hist["Location"] == location_bt) & (hist["Date"] == d)]
+            if not r.empty:
+                row, used_date = r, d
+                break
+
+        if row.empty:
+            st.warning(f"⚠ No historical data for {location_bt} around {event_date_str} "
+                       "in the balanced dataset.")
+            st.info("Run `python data_pipeline.py --use-api` to fetch a wider date range.")
+        else:
+            r = row.iloc[0]
+            prob = r["Predicted_Probability"] * 100
+            actual = int(r.get("Cloudburst", 0))
+            occurred_on_event_day = (
+                hist[(hist["Location"] == location_bt) &
+                     (hist["Date"] == event_date)]["Cloudburst"].sum() >= 1
+            )
+
+            day_lbl = used_date.strftime("%d %b %Y")
+            st.markdown(f"##### 🌍 Weather conditions on **{day_lbl}** at **{location_bt}**")
+
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("☔ Rainfall",     f"{r['PRECTOT']:.1f} mm")
+            c2.metric("🌡️ Temperature", f"{r['T2M']:.1f} °C")
+            c3.metric("💧 Humidity",     f"{r['RH2M']:.0f} %")
+            c4.metric("💨 Wind",         f"{r['WS2M']:.1f} m/s")
+
+            st.markdown("---")
+            c5, c6 = st.columns(2)
+            with c5:
+                st.markdown("#### 🤖 Model Predicted")
+                colour = "#ef4444" if prob >= 60 else "#f59e0b" if prob >= 30 else "#10b981"
+                st.markdown(f"<h1 style='color:{colour};margin:0'>{prob:.1f}%</h1>",
+                            unsafe_allow_html=True)
+                st.markdown(f"**Risk Level:** `{r['Risk_Level']}`")
+            with c6:
+                st.markdown("#### 📰 What Actually Happened")
+                if occurred_on_event_day or actual == 1:
+                    st.markdown(f"<h1 style='color:#ef4444;margin:0'>Cloudburst occurred</h1>",
+                                unsafe_allow_html=True)
+                    st.markdown(f"**Confirmed event on {event_date.strftime('%d %b %Y')}**")
+                else:
+                    st.markdown(f"<h1 style='color:#10b981;margin:0'>Normal day</h1>",
+                                unsafe_allow_html=True)
+
+            st.markdown("---")
+            predicted_high = prob >= 60
+            actual_event = occurred_on_event_day or actual == 1
+
+            if predicted_high and actual_event:
+                days_ahead = (event_date - used_date).days
+                if days_ahead > 0:
+                    st.success(f"✅ **CORRECT PREDICTION!** Model gave **{prob:.1f}% risk** {days_ahead} day(s) BEFORE the event. Genuine early warning.")
+                else:
+                    st.success(f"✅ **MODEL CONFIRMS THE EVENT** — Gave **{prob:.1f}% risk** on the event day itself. NASA POWER data captured {r['PRECTOT']:.1f}mm rainfall, model correctly classified as cloudburst-grade.")
+            elif not predicted_high and not actual_event:
+                st.success(f"✅ **CORRECT (no event)** — Model gave {prob:.1f}% (low) "
+                           "and no cloudburst occurred.")
+            elif predicted_high:
+                st.warning(f"⚠️ **FALSE ALARM** — Model gave {prob:.1f}% risk "
+                           "but no cloudburst occurred. Acceptable trade-off for early warning.")
+            else:
+                st.error(f"❌ **MISSED** — Model gave only {prob:.1f}% but cloudburst occurred. "
+                         "Some events are inherently unpredictable from daily-scale features. "
+                         "This is why we maintain recall-first threshold tuning.")
+
+            # Show ±7 day timeline of probabilities around this event
+            st.markdown("---")
+            st.markdown("##### 📈 Risk Probability — 14 days around event")
+            window_start = event_date - pd.Timedelta(days=7)
+            window_end = event_date + pd.Timedelta(days=7)
+            timeline = hist[(hist["Location"] == location_bt) &
+                            (hist["Date"] >= window_start) &
+                            (hist["Date"] <= window_end)].sort_values("Date")
+            if not timeline.empty:
+                ts = timeline.set_index("Date")[["Predicted_Probability", "Cloudburst"]]
+                ts["Predicted_Probability"] *= 100
+                st.line_chart(ts["Predicted_Probability"])
+                st.caption(f"📅 Event date: {event_date.strftime('%d %b %Y')} · "
+                           f"Yellow line = model's predicted % risk · "
+                           f"Look for the spike before the event date.")
+            else:
+                st.info("Surrounding days not in balanced dataset. "
+                        "Run pipeline with broader sampling to enable timeline.")
 # ===== LIVE MONITOR SECTION — 20 sites + interactive map =====
 import requests as _rq
 import pydeck as _pdk

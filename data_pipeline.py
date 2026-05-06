@@ -70,7 +70,6 @@ KNOWN_EVENTS = {
     "Malpa (Pithoragarh)":              [("1998-08-17",), ("1998-08-18",)],
     "Mandakini Valley (Rudraprayag)":   [("2012-09-13",), ("2013-06-17",)],
     # New historical events for additional locations
-    "Joshimath (Chamoli)":              [("2021-02-07",), ("2023-01-04",)],
     "Tehri (Tehri Garhwal)":            [("2003-08-13",), ("2010-08-19",)],
     "Mussoorie (Dehradun)":             [("2009-08-12",), ("2017-07-15",)],
     "Pithoragarh Town (Pithoragarh)":   [("2010-08-15",), ("2024-07-18",)],
@@ -268,8 +267,10 @@ def synth_weather(site: Site, years: int = 30, seed: int = 42) -> pd.DataFrame:
 RAIN_THRESHOLD_MM = 100.0
 
 
-def label_cloudburst(df: pd.DataFrame, site: Site) -> pd.DataFrame:
-    """Label = 1 if (a) within +/- 1 day of a known event OR (b) extreme rainfall."""
+def label_cloudburst(df: pd.DataFrame, site: Site, inject_synthetic: bool = False) -> pd.DataFrame:
+    """Label = 1 if (a) within +/- 1 day of a known event OR (b) extreme rainfall.
+       If inject_synthetic=False (default), uses ONLY real NASA POWER values.
+       If True (legacy), injects synthetic features for known events with weak rain."""
     df = df.copy()
     df["Cloudburst"] = 0
 
@@ -282,11 +283,12 @@ def label_cloudburst(df: pd.DataFrame, site: Site) -> pd.DataFrame:
         if not mask.any():
             continue
         # Force a strong-rain signature where current rain is below threshold
-        weak = mask & (df["PRECTOT"] < RAIN_THRESHOLD_MM)
-        if weak.any():
-            df.loc[weak, "PRECTOT"] = rng.uniform(110, 220, int(weak.sum()))
-        df.loc[mask, "RH2M"] = np.maximum(df.loc[mask, "RH2M"], 88)
-        df.loc[mask, "WS2M"] = np.maximum(df.loc[mask, "WS2M"], 3.5)
+        if inject_synthetic:
+            weak = mask & (df["PRECTOT"] < RAIN_THRESHOLD_MM)
+            if weak.any():
+                df.loc[weak, "PRECTOT"] = rng.uniform(110, 220, int(weak.sum()))
+            df.loc[mask, "RH2M"] = np.maximum(df.loc[mask, "RH2M"], 88)
+            df.loc[mask, "WS2M"] = np.maximum(df.loc[mask, "WS2M"], 3.5)
         df.loc[mask, "Cloudburst"] = 1
 
     # (b) Climatological extreme rule
