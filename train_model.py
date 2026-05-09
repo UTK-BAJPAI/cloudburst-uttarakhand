@@ -115,8 +115,11 @@ def build_ensemble():
     if not SKLEARN_OK:
         return RandomForestClassifier()
     return RandomForestClassifier(
-        n_estimators=400, max_depth=None, min_samples_leaf=2,
-        class_weight='balanced', n_jobs=-1, random_state=42)
+        n_estimators=600,           # more trees = sharper probabilities
+        max_depth=None,
+        min_samples_leaf=1,         # less regularization
+        class_weight={0: 1, 1: 3},  # 3x weight on positive class
+        n_jobs=-1, random_state=42)
 
 def tune_threshold(y_true, y_proba, min_recall=0.70):
     """Fixed threshold of 0.5 for balanced production metrics."""
