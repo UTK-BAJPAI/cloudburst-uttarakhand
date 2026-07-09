@@ -96,8 +96,8 @@ def load_dataset():
 
 def predict_cloudburst(rain, temp, humidity, wind, month=7, prev_temp=None,
                        model=None, scaler=None, metadata=None):
-    """Hybrid predictor: ML model + climatological signature from past events.
-       Historical patterns show cloudbursts occur when RH>=84%, T>=10C, monsoon months."""
+    """Rain-anchored predictor: rainfall is PRIMARY driver.
+       Humidity/season are modifiers, not drivers. Prevents false High on normal monsoon days."""
     if model is None:
         model, scaler, metadata = load_artefacts()
 
@@ -121,43 +121,49 @@ def predict_cloudburst(rain, temp, humidity, wind, month=7, prev_temp=None,
     X = scaler.transform(X)
     ml_proba = float(model.predict_proba(X)[0, 1])
 
-    # === CLIMATOLOGICAL SCORE (from past event signatures) ===
-    clim = 0.30  # baseline
+    # === RAIN-ANCHORED CLIMATOLOGICAL SCORE ===
+    clim = 0.10  # low baseline (not monsoon-biased)
 
-    # Humidity — strongest indicator (all real cloudbursts had >=84%)
-    if humidity >= 95:     clim += 0.35
-    elif humidity >= 90:   clim += 0.25
-    elif humidity >= 84:   clim += 0.15
-    elif humidity >= 70:   clim += 0.05
-    else:                  clim -= 0.20   # too dry
+    # RAINFALL is PRIMARY driver
+    if rain >= 100:      clim += 0.65   # extreme, definite cloudburst grade
+    elif rain >= 65:     clim += 0.50   # very heavy
+    elif rain >= 35:     clim += 0.35   # heavy
+    elif rain >= 15:     clim += 0.15   # moderate
+    elif rain >= 5:      clim += 0.05   # light
+    # else: rain < 5mm, no boost
 
-    # Rainfall (grid-diluted, so any moderate value counts)
-    if rain >= 100:        clim += 0.30
-    elif rain >= 50:       clim += 0.20
-    elif rain >= 20:       clim += 0.12
-    elif rain >= 5:        clim += 0.05
+    # Humidity is a CONDITIONAL modifier — only meaningful with significant rain
+    if rain >= 20:
+        if humidity >= 95:     clim += 0.15
+        elif humidity >= 85:   clim += 0.10
+    elif humidity < 60:
+        clim -= 0.10   # dry air, definitely not cloudburst
 
-    # Temperature — monsoon range 10-30C
-    if 10 <= temp <= 30:   clim += 0.10
-    elif temp < 5:         clim -= 0.30   # winter, no atmospheric moisture
+    # Temperature safety check
+    if temp < 5:         clim -= 0.30   # winter, no atmospheric moisture
+    elif temp > 35:      clim -= 0.10   # too hot, less likely
 
-    # Season — monsoon boost
-    if month in [6, 7, 8, 9]:    clim += 0.15
-    elif month in [5, 10]:       clim += 0.05
-    elif month in [12, 1, 2]:    clim -= 0.20  # winter
+    # Season — small modifier
+    if month in [7, 8]:        clim += 0.08   # peak monsoon
+    elif month in [6, 9]:      clim += 0.04
+    elif month in [12, 1, 2]:  clim -= 0.25   # winter
 
-    # Wind — moderate wind supports orographic uplift
-    if 2 <= wind <= 6:     clim += 0.05
-    elif wind > 10:        clim -= 0.05
+    # Wind — orographic factor
+    if wind > 8:         clim += 0.05
+
+    # HARD CAP: If rain < 10mm, cap climatology at 0.40 (Medium max)
+    # This prevents high-humidity normal monsoon days from being flagged High
+    if rain < 10:
+        clim = min(clim, 0.40)
 
     clim = max(0.02, min(0.98, clim))
 
-    # BLEND: 55% climatology + 45% ML (climatology weighted higher based on domain knowledge)
-    proba = 0.55 * clim + 0.45 * ml_proba
+    # BLEND: 60% climatology + 40% ML (rain-anchored climatology weighted higher)
+    proba = 0.60 * clim + 0.40 * ml_proba
 
     thr = metadata["tuned_threshold"]
-    if proba >= 0.60: level = "High"
-    elif proba >= 0.30: level = "Medium"
+    if proba >= 0.65: level = "High"
+    elif proba >= 0.35: level = "Medium"
     else: level = "Low"
     return {"risk_level": level, "probability": proba, "threshold": thr}
 # ---------- UI ----------
@@ -436,6 +442,7 @@ def _fetch_live(model_id):
                 "Rain (mm)": rain,
                 "Temp (C)": cur["temperature_2m"],
                 "Humidity (%)": cur["relative_humidity_2m"],
+                "Wind (m/s)": cur["wind_speed_10m"],
                 "Probability": res["probability"],
                 "Risk_Level": res["risk_level"],
             })
@@ -506,7 +513,7 @@ else:
     st.markdown("##### 📊 " + T["detail"])
     st.dataframe(
         latest[["Location", "District", "Rain (mm)", "Temp (C)",
-                "Humidity (%)", "Probability", "Risk_Level"]],
+                "Humidity (%)", "Wind (m/s)", "Probability", "Risk_Level"]],
         use_container_width=True, hide_index=True,
     )
 
