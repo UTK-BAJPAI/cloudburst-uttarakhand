@@ -96,7 +96,8 @@ def load_dataset():
 
 def predict_cloudburst(rain, temp, humidity, wind, month=7, prev_temp=None,
                        model=None, scaler=None, metadata=None):
-    """Score current conditions; uses today as proxy for missing lag features."""
+    """Hybrid predictor: ML model + climatological signature from past events.
+       Historical patterns show cloudbursts occur when RH>=84%, T>=10C, monsoon months."""
     if model is None:
         model, scaler, metadata = load_artefacts()
 
@@ -118,9 +119,44 @@ def predict_cloudburst(rain, temp, humidity, wind, month=7, prev_temp=None,
     }
     X = np.array([[feats.get(c, 0.0) for c in metadata["feature_cols"]]], dtype=float)
     X = scaler.transform(X)
-    proba = float(model.predict_proba(X)[0, 1])
+    ml_proba = float(model.predict_proba(X)[0, 1])
+
+    # === CLIMATOLOGICAL SCORE (from past event signatures) ===
+    clim = 0.30  # baseline
+
+    # Humidity — strongest indicator (all real cloudbursts had >=84%)
+    if humidity >= 95:     clim += 0.35
+    elif humidity >= 90:   clim += 0.25
+    elif humidity >= 84:   clim += 0.15
+    elif humidity >= 70:   clim += 0.05
+    else:                  clim -= 0.20   # too dry
+
+    # Rainfall (grid-diluted, so any moderate value counts)
+    if rain >= 100:        clim += 0.30
+    elif rain >= 50:       clim += 0.20
+    elif rain >= 20:       clim += 0.12
+    elif rain >= 5:        clim += 0.05
+
+    # Temperature — monsoon range 10-30C
+    if 10 <= temp <= 30:   clim += 0.10
+    elif temp < 5:         clim -= 0.30   # winter, no atmospheric moisture
+
+    # Season — monsoon boost
+    if month in [6, 7, 8, 9]:    clim += 0.15
+    elif month in [5, 10]:       clim += 0.05
+    elif month in [12, 1, 2]:    clim -= 0.20  # winter
+
+    # Wind — moderate wind supports orographic uplift
+    if 2 <= wind <= 6:     clim += 0.05
+    elif wind > 10:        clim -= 0.05
+
+    clim = max(0.02, min(0.98, clim))
+
+    # BLEND: 55% climatology + 45% ML (climatology weighted higher based on domain knowledge)
+    proba = 0.55 * clim + 0.45 * ml_proba
+
     thr = metadata["tuned_threshold"]
-    if proba >= max(thr, 0.6): level = "High"
+    if proba >= 0.60: level = "High"
     elif proba >= 0.30: level = "Medium"
     else: level = "Low"
     return {"risk_level": level, "probability": proba, "threshold": thr}
